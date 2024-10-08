@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/project-js-teamwork/",
+    "build": "vite build --base=/LloydJefferson/",
     "preview": "vite preview"
   },
   "devDependencies": {
