@@ -1,10 +1,103 @@
+.hero {
+  padding-bottom: 80px;
+  min-height: 968px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  min-height: 704px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+h1 {
+  font-family: var(--font-impact);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  padding-top: 96px;
+}
+.highlight {
+  display: block;
+  font-family: var(--font-impact);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #00b068;
+}
+.hero-text-order {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  align-items: center;
+  padding: 10px 20px;
+  background: #bcdfd1;
+  border-radius: 16px;
+  max-width: 165px;
+  min-height: 92px;
+  text-decoration: none;
+}
+
+.hero-text {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  padding-top: 40px;
+}
+
+.arrow {
+}
+
+.hero-link {
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.container-social-links {
+  background: #e4e5e6;
+  width: 100%;
+}
+.hero-social-links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .hero-light-img {
   border-radius: 32px;
+  display: none;
 }
 
 .light-theme .hero-content {
   background-image: url(../img/bg-hero-img-lx1/bg-hero-mob-light-x1.png);
   background-repeat: no-repeat;
+
   background-size: cover;
 }
 
@@ -26,6 +119,20 @@
 
 /*-----------------Tablet----------------*/
 @media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 124px;
+  }
+
+  .hero-social-links-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .hero-light-img {
+    display: block;
+  }
   .light-theme .hero-content {
     background-image: url(../img/bg-hero-img-lx1/bg-hero-tablet-light-x1.png);
   }
@@ -47,6 +154,9 @@
   /*-----------------Desktop----------------*/
 
   @media only screen and (min-width: 1280px) {
+    .hero {
+      padding-bottom: 164px;
+    }
     .light-theme .hero-content {
       background-image: url(../img/bg-hero-img-lx1/bg-hero-desc-light-x1.png);
     }
