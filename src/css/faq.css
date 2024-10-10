@@ -1,0 +1,109 @@
+
+
+.faq-container {
+margin: 0 auto;
+padding: 0px 20px;
+} 
+
+.faq-title {
+font-family: "Impact", sans-serif;
+font-weight: 400;
+font-size: 52px;
+line-height: 1.23;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #292929;
+margin-bottom: 40px;
+}
+
+.color {
+color: #00b068;
+}
+
+.faq-accordion .faq-item {
+    border-bottom: 1px solid #e4e5e6;
+    padding: 28px 24px;
+    cursor: pointer;
+}
+
+
+.faq-question {
+display: flex;
+gap: 16px;
+justify-content: space-between;
+align-items: center;
+transition: background-color 0.3s ease;
+}
+
+.faq-question h3 {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    min-width: 224px;
+}
+
+.faq-question.active {
+    background: #c6e5e5;
+}
+
+.faq-icon {
+    stroke: #292929;
+    fill: transparent;
+} 
+
+.faq-btn {
+    border: none;
+
+}
+
+.faq-answer {
+    max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #c6e5e5;
+        padding: 0 15px;
+}
+
+.faq-answer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    display: none;
+}
+
+
+.faq-item .faq-answer.is-active {
+    display: block;
+} 
+
+/*.faq-icon {
+    transition: transform 0.3s;
+    /* Анімація для іконки */
+/*}
+
+.faq-item.is-active .faq-icon {
+    transform: rotate(180deg);
+    /* Поворот іконки */
+/*} */
+
+.faq-btn .faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-btn.active .faq-icon {
+    transform: rotate(180deg);
+      /* Поворот іконки при розкритті */
+} 
+
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1280px) {}
