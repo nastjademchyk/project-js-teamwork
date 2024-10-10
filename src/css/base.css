@@ -20,6 +20,60 @@
   --font-poppins: 'Poppins', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-impact: 'Impact', sans-serif;
+  --font-poppins-medium: 'Poppins Medium', sans-serif;
+  --font-poppins-light: 'Poppins Light', sans-serif;
+  --font-poppins-regular: 'Poppins Regular', sans-serif;
+
+  --color-black: #292929;
+  --color-accent-green: #00b068;
+  --color-white: #f0f0f0;
+  --color-light-grey: #e4e5e6;
+  --color-light-accent: #bcdfd1;
+  --color-hover-green: #009156;
+  --color-error: #e74a3b;
+  --color-hover-grey: #bbbbbb;
+
+  /* Desktop-Tablet */
+  --h1-desktop-font-size: 136px;
+  --h1-desktop-line-height: 156px;
+  --h1-desktop-letter-spacing: 1.8px;
+
+  --h2-desktop-font-size: 108px;
+  --h2-desktop-line-height: 124px;
+  --h2-desktop-letter-spacing: 1.8px;
+
+  --h3-desktop-font-size: 36px;
+  --h3-desktop-line-height: 48px;
+  --h3-desktop-letter-spacing: 0.5px;
+
+  --body1-desktop-font-size: 16px;
+  --body1-desktop-line-height: 24px;
+  --body1-desktop-letter-spacing: 0.2px;
+
+  --body2-desktop-font-size: 20px;
+  --body2-desktop-line-height: 32px;
+  --body2-desktop-letter-spacing: 0.5px;
+
+  /* Mobile */
+  --h1-mobile-font-size: 64px;
+  --h1-mobile-line-height: 80px;
+  --h1-mobile-letter-spacing: 1.8px;
+
+  --h2-mobile-font-size: 52px;
+  --h2-mobile-line-height: 64px;
+  --h2-mobile-letter-spacing: 1.8px;
+
+  --h3-mobile-font-size: 32px;
+  --h3-mobile-line-height: 40px;
+  --h3-mobile-letter-spacing: 0.5px;
+
+  --body1-mobile-font-size: 16px;
+  --body1-mobile-line-height: 24px;
+  --body1-mobile-letter-spacing: 0.2px;
+
+  --body2-mobile-font-size: 18px;
+  --body2-mobile-line-height: 28px;
+  --body2-mobile-letter-spacing: 0.5px;
 }
 
 @font-face {
