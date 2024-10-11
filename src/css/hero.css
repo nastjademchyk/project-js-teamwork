@@ -128,16 +128,6 @@ p:last-child {
   }
 }
 
-.dark-theme .hero-content {
-  background-image: url(../img/bg-hero-img-lx1/bg-hero-mobile-dark-x1.png);
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .dark-theme .hero-content {
-    background-image: url(../img/bg-hero-img-x2/bg-hero-mobile-dark-x2.png);
-  }
-}
-
 /*-----------------Tablet----------------*/
 @media only screen and (min-width: 768px) {
   .h1-img {
@@ -183,15 +173,6 @@ p:last-child {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .light-theme .hero-content {
       background-image: url(../img/bg-hero-img-x2/bg-hero-tablet-light-x2.png);
-    }
-  }
-  .dark-theme .hero-content {
-    background-image: url(../img/bg-hero-img-lx1/bg-hero-tablet-dark-x1.png);
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .dark-theme .hero-content {
-      background-image: url(../img/bg-hero-img-x2/bg-hero-tablet-dark-x2.png);
     }
   }
 
@@ -244,13 +225,6 @@ p:last-child {
       .light-theme .hero-content {
         background-image: url(../img/bg-hero-img-x2/bg-hero-desc-light-x2.png);
       }
-    }
-
-    .dark-theme .hero-content {
-      background-image: url(../img/bg-hero-img-lx1/bg-hero-desc-dark-x1.png);
-    }
-    .dark-theme .hero-content {
-      background-image: url(../img/bg-hero-img-x2/bg-hero-desc-dark-x2.png);
     }
   }
 }
