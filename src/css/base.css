@@ -20,6 +20,60 @@
   --font-poppins: 'Poppins', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-impact: 'Impact', sans-serif;
+  --font-poppins-medium: 'Poppins Medium', sans-serif;
+  --font-poppins-light: 'Poppins Light', sans-serif;
+  --font-poppins-regular: 'Poppins Regular', sans-serif;
+
+  --color-black: #292929;
+  --color-accent-green: #00b068;
+  --color-white: #f0f0f0;
+  --color-light-grey: #e4e5e6;
+  --color-light-accent: #bcdfd1;
+  --color-hover-green: #009156;
+  --color-error: #e74a3b;
+  --color-hover-grey: #bbbbbb;
+
+  /* Desktop-Tablet */
+  --h1-desktop-font-size: 136px;
+  --h1-desktop-line-height: 1.15;
+  --h1-desktop-letter-spacing: 0.013em;
+
+  --h2-desktop-font-size: 108px;
+  --h2-desktop-line-height: 1.15;
+  --h2-desktop-letter-spacing: 0.016em;
+
+  --h3-desktop-font-size: 36px;
+  --h3-desktop-line-height: 1.33;
+  --h3-desktop-letter-spacing: 0.01em;
+
+  --body1-desktop-font-size: 16px;
+  --body1-desktop-line-height: 1.5;
+  --body1-desktop-letter-spacing: 0.1em;
+
+  --body2-desktop-font-size: 20px;
+  --body2-desktop-line-height: 1.6;
+  --body2-desktop-letter-spacing: 0.025em;
+
+  /* Mobile */
+  --h1-mobile-font-size: 64px;
+  --h1-mobile-line-height: 1.25;
+  --h1-mobile-letter-spacing: 0.03em;
+
+  --h2-mobile-font-size: 52px;
+  --h2-mobile-line-height: 1.23;
+  --h2-mobile-letter-spacing: 0.03em;
+
+  --h3-mobile-font-size: 32px;
+  --h3-mobile-line-height: 1.25;
+  --h3-mobile-letter-spacing: 0.015em;
+
+  --body1-mobile-font-size: 16px;
+  --body1-mobile-line-height: 1.5;
+  --body1-mobile-letter-spacing: 0.1em;
+
+  --body2-mobile-font-size: 18px;
+  --body2-mobile-line-height: 1.55;
+  --body2-mobile-letter-spacing: 0.027em;
 }
 
 @font-face {
@@ -44,4 +98,30 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.accent-color {
+  color: #00b068;
+}
+/* Styles for Mobile devices */
+section {
+  padding-bottom: 80px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  section {
+    padding-bottom: 124px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  section {
+    padding-bottom: 164px;
+  }
 }
