@@ -59,10 +59,6 @@
   }
 }
 
-.work-together-title > span {
-  color: var(--color-accent-green);
-}
-
 .work-together-wrap {
   display: flex;
   flex-direction: column;
@@ -162,6 +158,8 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .left-contact-icon {
@@ -198,6 +196,8 @@
   background-color: var(--color-light-grey);
   cursor: pointer;
   outline: none;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .form-input:focus,
@@ -229,6 +229,8 @@
 .form-button {
   width: 100%;
   height: 48px;
+  font-weight: 500;
+  font-size: 16px;
   background: var(--color-accent-green);
   border: none;
   border-radius: 8px;
