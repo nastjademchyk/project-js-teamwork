@@ -27,8 +27,6 @@
   flex-direction: column;
   justify-content: start;
   min-height: 704px;
-  padding-bottom: 16px;
-  padding-top: 16px;
 }
 
 h1 {
@@ -43,7 +41,7 @@ h1 {
 }
 
 .h1-img {
-  margin-top: 96px;
+  margin-top: 112px;
   margin-bottom: 40px;
 }
 
@@ -88,7 +86,7 @@ h1 {
 }
 
 p:last-child {
-  margin-bottom: 56px;
+  margin-bottom: 72px;
 }
 
 .hero-link {
@@ -134,12 +132,12 @@ p:last-child {
 /*-----------------Tablet----------------*/
 @media only screen and (min-width: 768px) {
   .h1-img {
-    margin-top: 72px;
+    margin-top: 88px;
     margin-bottom: 60px;
   }
 
   p:last-child {
-    margin-bottom: 88px;
+    margin-bottom: 104px;
   }
 
   .order-square {
@@ -198,7 +196,7 @@ p:last-child {
       display: flex;
       width: 100%;
       align-items: center;
-      margin-bottom: 80px;
+      margin-bottom: 96px;
       justify-content: space-between;
     }
 
