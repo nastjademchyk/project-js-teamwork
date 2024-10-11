@@ -1,0 +1,112 @@
+.about {
+    padding-bottom: 80px;
+}
+
+.about-title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.about-span {
+    color: #00b068;
+}
+
+.about-image {
+    border-radius: 16px;
+    display: block;
+    min-width: 100%;
+    margin-bottom: 40px;
+}
+
+.about-title-two {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.about-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.special-dash {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: pink;
+    height: 32px;
+}
+
+.dash-list-education {
+    height: 12px;
+}
+
+.about-pharagraf-all {
+    margin-bottom: 40px;
+}
+
+.about-list-education {
+    /* list-style-type: square; */
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.about-item-education {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 12px;
+
+}
+
+.about-title-two {
+    margin-bottom: 32px;
+}
+
+
+@media screen and (min-width:768px) {
+    .about-title {
+
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+    }
+
+    .about-image {
+        width: 336px;
+        height: 392px;
+    }
+
+    .about-content {
+        display: flex;
+        gap: 32px;
+    }
+
+    .ab-im {
+        margin-top: 400px;
+    }
+
+    .li-im {
+        width: calc((100% - 32px)/2);
+    }
+
+}
