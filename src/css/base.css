@@ -104,20 +104,20 @@ main:has(.back-link) {
   color: #00b068;
 }
 /* Styles for Mobile devices */
-section:not(:last-child) {
+section {
   padding-bottom: 80px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  section:not(:last-child) {
+  section {
     padding-bottom: 124px;
   }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
-  section:not(:last-child) {
+  section {
     padding-bottom: 164px;
   }
 }
