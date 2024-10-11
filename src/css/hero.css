@@ -13,8 +13,8 @@
   align-items: center;
   gap: 12px;
   height: 92px;
-
   position: relative;
+  margin-bottom: 40px;
 }
 
 .arrow-icon {
@@ -23,10 +23,10 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   min-height: 704px;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 h1 {
@@ -39,6 +39,12 @@ h1 {
   color: #292929;
   display: block;
 }
+
+.h1-img {
+  margin-top: 96px;
+  margin-bottom: 40px;
+}
+
 .hero-text-order {
   display: flex;
   align-items: center;
@@ -50,7 +56,6 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
-  /* padding-left: 25px; */
 }
 
 .order-square {
@@ -65,6 +70,9 @@ h1 {
   transform: translateY(-50%);
 }
 
+.hero-text-order:hover .order-square {
+  background-color: #00a86b;
+}
 .hero-text {
   font-family: var(--font-poppins);
   font-weight: 400;
@@ -73,6 +81,10 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
+}
+
+p:last-child {
+  margin-bottom: 56px;
 }
 
 .hero-link {
@@ -127,11 +139,32 @@ h1 {
 
 /*-----------------Tablet----------------*/
 @media only screen and (min-width: 768px) {
+  .h1-img {
+    margin-top: 72px;
+    margin-bottom: 60px;
+  }
+
+  p:last-child {
+    margin-bottom: 88px;
+  }
+  .order-square {
+    width: 261px;
+    height: 96px;
+    right: -167px;
+  }
+  .hero-text-order {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
   h1 {
     font-weight: 400;
     font-size: 124px;
 
-    line-height: 1.19355;
+    line-height: 1.19;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #292929;
@@ -168,13 +201,40 @@ h1 {
       display: flex;
       gap: 72px;
       width: 100%;
+      margin-bottom: 80px;
+    }
+    .desck-arrow-text {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 80px;
+      justify-content: space-between;
+    }
+    .arrow-box {
+      margin-bottom: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
     }
 
+    .hero-text {
+      max-width: 592px;
+    }
     .hero-light-img {
       display: block;
       max-width: none;
     }
-
+    /* .order-square {
+      width: 261px;
+      height: 96px;
+      right: -167px;
+    } */
+    .arrow-icon {
+      width: 30px;
+    }
+    .arrow-box {
+      margin-left: 72px;
+    }
     .highlight {
       font-weight: 400;
       font-size: 124px;
