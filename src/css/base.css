@@ -105,19 +105,19 @@ main:has(.back-link) {
 }
 /* Styles for Mobile devices */
 section:not(:last-child) {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   section:not(:last-child) {
-    margin-bottom: 124px;
+    padding-bottom: 124px;
   }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   section:not(:last-child) {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
   }
 }
