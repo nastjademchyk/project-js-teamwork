@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .arrow-box {
   display: flex;
   flex-direction: row;
@@ -20,6 +21,7 @@
 .arrow-icon {
   fill: #00b068;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -74,6 +76,7 @@ h1 {
 .hero-text-order:hover .order-square {
   background-color: #00a86b;
 }
+
 .hero-text {
   font-family: var(--font-poppins);
   font-weight: 400;
@@ -101,6 +104,7 @@ p:last-child {
   background: #e4e5e6;
   width: 100vw;
 }
+
 .hero-social-links-list {
   display: flex;
   flex-direction: column;
@@ -118,7 +122,6 @@ p:last-child {
 .light-theme .hero-content {
   background-image: url(../img/bg-hero-img-lx1/bg-hero-mob-light-x1.png);
   background-repeat: no-repeat;
-
   background-size: cover;
 }
 
@@ -138,28 +141,31 @@ p:last-child {
   p:last-child {
     margin-bottom: 88px;
   }
+
   .order-square {
     width: 261px;
     height: 96px;
     right: -167px;
   }
+
   .hero-text-order {
     font-size: 20px;
     line-height: 1.6;
   }
+
   .hero-text {
     font-size: 20px;
     line-height: 1.6;
   }
-  h1 {
-    font-weight: 400;
-    font-size: 124px;
 
+  h1 {
+    font-size: 124px;
     line-height: 1.19;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #292929;
   }
+
   .hero-social-links-list {
     flex-direction: row;
     justify-content: center;
@@ -167,9 +173,11 @@ p:last-child {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .light-theme .hero-content {
     background-image: url(../img/bg-hero-img-lx1/bg-hero-tablet-light-x1.png);
   }
+
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .light-theme .hero-content {
       background-image: url(../img/bg-hero-img-x2/bg-hero-tablet-light-x2.png);
@@ -185,16 +193,15 @@ p:last-child {
       width: 100%;
       margin-bottom: 80px;
     }
-    .desck-arrow-text {
+
+    .desk-arrow-text {
       display: flex;
       width: 100%;
       align-items: center;
       margin-bottom: 80px;
       justify-content: space-between;
     }
-    .arrow-box {
-      margin-bottom: 0;
-    }
+
     p:last-child {
       margin-bottom: 0;
     }
@@ -202,6 +209,7 @@ p:last-child {
     .hero-text {
       max-width: 592px;
     }
+
     .hero-light-img {
       display: block;
       max-width: none;
@@ -210,9 +218,12 @@ p:last-child {
     .arrow-icon {
       width: 30px;
     }
+
     .arrow-box {
       margin-left: 72px;
+      margin-bottom: 0;
     }
+
     .highlight {
       font-weight: 400;
       font-size: 124px;
