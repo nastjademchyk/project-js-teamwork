@@ -1,6 +1,6 @@
-.about {
+/* .about {
     padding-bottom: 80px;
-}
+} */
 
 .about-title {
     font-weight: 400;
@@ -11,6 +11,7 @@
     color: #292929;
     text-align: left;
     padding-bottom: 40px;
+    font-family: "Impact", sans-serif;
 }
 
 .about-span {
@@ -22,6 +23,11 @@
     display: block;
     min-width: 100%;
     margin-bottom: 40px;
+}
+
+.about-text-container {
+    margin-bottom: 40px;
+
 }
 
 .about-title-two {
@@ -39,6 +45,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
+    font-family: "Poppins", sans-serif;
 }
 
 .special-dash {
@@ -54,18 +61,30 @@
     height: 12px;
 }
 
-.about-pharagraf-all {
-    margin-bottom: 40px;
-}
-
 .about-list-education {
-    /* list-style-type: square; */
+    
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.marker {
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    background: #00B068;
+    transform: rotate(-180deg);
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.year {
+    
+    margin-right: 5px;
+    /* Відступ праворуч від року */
 }
 
 .about-item-education {
@@ -75,6 +94,12 @@
     letter-spacing: 0.03em;
     color: #292929;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    /* flex-direction: row;
+    align-items: center; */
 
 }
 
@@ -82,10 +107,16 @@
     margin-bottom: 32px;
 }
 
+.new {
+    margin-bottom: 24px;
+}
+
 
 @media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
     .about-title {
-
         font-size: 108px;
         line-height: 1.15;
         letter-spacing: 0.02em;
@@ -94,19 +125,52 @@
     .about-image {
         width: 336px;
         height: 392px;
+        margin-bottom: 0;
     }
 
     .about-content {
         display: flex;
         gap: 32px;
+        margin-bottom: 60px;
     }
 
     .ab-im {
-        margin-top: 400px;
+       padding-top: 408px;
     }
 
     .li-im {
-        width: calc((100% - 32px)/2);
+        width: calc((100% - 32px)/1);
     }
 
-}
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px;
+        }
+        
+    .education-block,
+    .role-block {
+        flex: 1;
+        }
+        .education-block
+    .about-list-education{
+        padding-bottom: 0;
+        }
+    .about-text-container{
+        background-image: url('../img/bg-img-x1/bg6-tablet-x1.png');
+        background-position: center bottom;
+        background-size:auto;
+        background-repeat: no-repeat;
+        margin-bottom: -160px;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 1;
+    }
+   
+    .about-text:last-of-type::before {
+        position: absolute;
+        z-index: -1;
+            }
+                    
+  }
