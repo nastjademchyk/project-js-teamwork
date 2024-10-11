@@ -1,0 +1,9 @@
+.svg-user,
+.svg-chat,
+.svg-brush,
+.svg-hourglass {
+    stroke: #00b068;
+    fill: #BCDFD1;
+    background-color: #BCDFD1;
+    border-radius: 8px;
+}
