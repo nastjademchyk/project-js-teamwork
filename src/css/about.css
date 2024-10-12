@@ -14,8 +14,12 @@
     font-family: "Impact", sans-serif;
 }
 
-.about-span {
-    color: #00b068;
+.accent-color {
+    color: #00B068
+}
+
+.accent-color {
+    color: #00B068
 }
 
 .about-image {
@@ -84,7 +88,7 @@
 .year {
     
     margin-right: 5px;
-    /* Відступ праворуч від року */
+
 }
 
 .about-item-education {
@@ -113,14 +117,16 @@
 
 
 @media screen and (min-width:768px) {
-    .container {
+    /* .container {
         max-width: 768px;
-    }
+    } */
     .about-title {
         font-size: 108px;
         line-height: 1.15;
         letter-spacing: 0.02em;
     }
+
+        
 
     .about-image {
         width: 336px;
@@ -131,22 +137,23 @@
     .about-content {
         display: flex;
         gap: 32px;
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
 
     .ab-im {
        padding-top: 408px;
     }
 
-    .li-im {
-        width: calc((100% - 32px)/1);
-    }
+    /* .li-im {
+        width: calc((100% - 32px)/2);
+    } */
 
     .about-section {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap: 32px;
+        margin-top: 60px;
+        
         }
         
     .education-block,
@@ -157,20 +164,150 @@
     .about-list-education{
         padding-bottom: 0;
         }
-    .about-text-container{
-        background-image: url('../img/bg-img-x1/bg6-tablet-x1.png');
-        background-position: center bottom;
-        background-size:auto;
-        background-repeat: no-repeat;
-        margin-bottom: -160px;
-        margin-bottom: 12px;
-        position: relative;
-        z-index: 1;
-    }
+ 
+        
+   .about-text-container {
+       position: relative;
+       
+       z-index: 1;
+       
+   }
+
+   .about-text:nth-of-type(2)::before {
+       content: "";
+       position: absolute;
+       top: 100%;
+       
+       left: 0;
+       width: 345px;
+       height: 260px;
+       background-image: url('../img/bg-img-x1/bg6-tablet-x1.png');
+      
+       background-size: auto;
+       background-repeat: no-repeat;
+       background-position: center bottom;
+       z-index: -1;
+       
+   }
    
-    .about-text:last-of-type::before {
+    /* .about-text-container::before {
         position: absolute;
         z-index: -1;
+            } */
+
+
+
+
+            .foto{
+                display: flex;
+                gap: 32px;
+                 
+            }
+            .about-text-container {
+                width: 336px;
+                height: 680px;
+                margin-bottom: 12px;
+            }
+
+            .about-pharagraf-all {
+                margin-bottom: 12px;
             }
                     
+  }
+
+  @media only screen and (min-width: 1280px) {
+    
+    .about-title-two {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.33;
+    }
+    .ab-im {
+        padding-top: 312px;
+    }
+    /* .about-content {
+       display:inline-flex;
+       gap: 136px;
+     
+    } */
+ .about-image {
+        width: 384px;
+        height: 448px;
+       
+    }
+
+        .foto {
+           
+            gap: 136px;
+            justify-content: right;
+    
+        }
+
+                .about-text-container {
+                width: 488px;
+                    height: 488px;
+                    margin-bottom: 40px;
+                }
+
+    .about-text:nth-of-type(2)::before {
+                width: 394px;
+                height: 297px;
+                background-image: url('../img/bg-img-x1/bg6-tablet-x1.png');
+
+                                }
+
+                         
+    .about-text:nth-of-type(2)::before {
+        left: auto;
+                            
+    right: 0;
+                             
+                         }
+        .about-title {
+            font-weight: 400;
+            font-size: 108px;
+        }
+        .about-title-two {
+            font-weight: 500;
+            font-size: 36px;
+        }
+
+
+                
+                .about-section {
+                    margin: 0 auto;
+                    width: 904px;
+                    height: 280px;
+                    display: flex;
+                    justify-content: space-between;
+            
+                
+                    box-sizing: border-box;
+                    gap: 136px;
+                        margin-top: 80px;
+                    
+                }
+        
+                
+                .education-block,
+                .role-block {
+                    width: 48%;
+                    
+                }
+        
+               
+                .about-list-education {
+                    list-style: none;
+                   
+                    padding: 0;
+                }
+        
+                .about-item-education {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+        
+            
+
   }
