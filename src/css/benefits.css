@@ -122,6 +122,19 @@
   /*  */
 
 
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+  }
+
+
+
+
+
+
+
 
 
 }
@@ -137,7 +150,7 @@
   .benefits-item-content {
 
 
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
 
   }
 
