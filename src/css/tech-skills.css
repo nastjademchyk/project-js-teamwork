@@ -1,0 +1,100 @@
+.tech_nav {
+    visibility: hidden;
+}
+
+.tech_primery {
+    padding: 0;
+    max-width: 100%;
+}
+
+.tech_container {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+}
+
+.tech_line {
+    height: 104px;
+    position: relative;
+}
+
+.tech_line_track {
+    display: flex;
+    animation: tech_move_text 5s cubic-bezier(0, 0, 1, 1) infinite;
+    white-space: nowrap;
+    position: absolute;
+
+    padding: 32px 0;
+    gap: 16px;
+}
+
+.background_tech_one {
+    z-index: 1;
+    background-color: #BCDFD1;
+}
+
+
+.background_tech_two {
+    background-color: #E4E5E6;
+    rotate: 2deg;
+}
+
+.tech_item_one,
+.tech_item_two {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.tech_item_one:not(:last-child)::after,
+.tech_item_two:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    top: 10px;
+    bottom: 10px;
+    background-color: #00B068;
+    border-radius: 2px;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+
+.tech_item_two:not(:last-child)::after {
+    background-color: #292929;
+}
+
+@keyframes tech_move_text {
+    0% {
+            transform: translateX(0%);
+            /* Початок поза правим краєм */
+        }
+    
+        100% {
+            transform: translateX(-51%);
+}
+}
+
+@media only screen and (min-width: 768px) {
+    .tech_container {
+        height: 280px;
+    }
+
+    .tech_container {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .tech_container {
+        height: 280px;
+    }
+
+        .tech_line {
+            left: 0;
+        }
+}
