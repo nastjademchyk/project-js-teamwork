@@ -31,15 +31,20 @@
 }
 
 .benefits-list {
+
+
+
+
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    gap: 20px;
     margin-bottom: 194px;
+
 }
 
-.benefits-list:first-child {
 
-    margin-left: 832px;
-}
+
 
 .benefits-item-title {
     font-family: var(--font-poppins);
@@ -52,7 +57,7 @@
     text-transform: uppercase;
 }
 
-.benefits-item:first-child {}
+
 
 
 .benefits-item {
