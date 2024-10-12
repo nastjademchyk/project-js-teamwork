@@ -18,9 +18,6 @@
     color: #00B068
 }
 
-.accent-color {
-    color: #00B068
-}
 
 .about-image {
     border-radius: 16px;
@@ -52,18 +49,18 @@
     font-family: "Poppins", sans-serif;
 }
 
-.special-dash {
+/* .special-dash {
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     color: pink;
     height: 32px;
-}
+} */
 
-.dash-list-education {
+/* .dash-list-education {
     height: 12px;
-}
+} */
 
 .about-list-education {
     
@@ -72,10 +69,10 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
-    padding-bottom: 40px;
+    
 }
 
-.marker {
+/* .marker {
     border-radius: 1px;
     width: 4px;
     height: 4px;
@@ -83,16 +80,10 @@
     transform: rotate(-180deg);
     margin-right: 10px;
     flex-shrink: 0;
-}
-
-.year {
-    
-    margin-right: 5px;
-
-}
+} */
 
 .about-item-education {
-    font-weight: 300;
+    /* font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
@@ -100,33 +91,71 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; */
 
+
+    max-width: 100%;
+    padding-left: 32px;
+    
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+        /* 150% */
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     /* flex-direction: row;
     align-items: center; */
+    position: relative;
+}
 
+.about-item-education::before {
+    display: block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #00b068;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .about-title-two {
     margin-bottom: 32px;
 }
 
-.new {
+.after-first-paragraf {
     margin-bottom: 24px;
 }
 
 
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.education-block,
+.role-block {
+    flex: 1;
+    min-width: 250px;
+}
+
+
 @media screen and (min-width:768px) {
-    /* .container {
-        max-width: 768px;
-    } */
+   
     .about-title {
         font-size: 108px;
         line-height: 1.15;
         letter-spacing: 0.02em;
     }
-
-        
 
     .about-image {
         width: 336px;
@@ -160,7 +189,8 @@
     .role-block {
         flex: 1;
         }
-        .education-block
+
+    .education-block
     .about-list-education{
         padding-bottom: 0;
         }
@@ -168,51 +198,37 @@
         
    .about-text-container {
        position: relative;
-       
        z-index: 1;
        
    }
 
-   .about-text:nth-of-type(2)::before {
+   .about-text::before {
        content: "";
        position: absolute;
-       top: 100%;
-       
+       top: 104%;
        left: 0;
-       width: 345px;
-       height: 260px;
-       background-image: url('../img/bg-img-x1/bg6-tablet-x1.png');
-      
+       width: 336px;
+       height: 252px;
+       background-image: url('../img//bg-img-x1/bg6-tablet-x1.png');
        background-size: auto;
        background-repeat: no-repeat;
-       background-position: center bottom;
+       /* background-position: center bottom; */
+
        z-index: -1;
        
    }
    
-    /* .about-text-container::before {
-        position: absolute;
-        z-index: -1;
-            } */
+    .foto{
+       display: flex;
+       gap: 32px;
+     }
+    .about-text-container {
+       width: 336px;
+       height: 680px;
+       margin-bottom: 12px;
+     }
 
-
-
-
-            .foto{
-                display: flex;
-                gap: 32px;
-                 
-            }
-            .about-text-container {
-                width: 336px;
-                height: 680px;
-                margin-bottom: 12px;
-            }
-
-            .about-pharagraf-all {
-                margin-bottom: 12px;
-            }
-                    
+           
   }
 
   @media only screen and (min-width: 1280px) {
@@ -230,29 +246,38 @@
        gap: 136px;
      
     } */
- .about-image {
+    .about-image {
         width: 384px;
         height: 448px;
-       
     }
 
-        .foto {
+    .foto {
            
             gap: 136px;
             justify-content: right;
-    
         }
 
-                .about-text-container {
-                width: 488px;
-                    height: 488px;
-                    margin-bottom: 40px;
+    .about-text-container {
+        width: 488px;
+        height: 488px;
+        margin-bottom: 40px;
                 }
 
-    .about-text:nth-of-type(2)::before {
+.about-text::before {
+    transform: translateX(20%);
+    width: 394px;
+        height: 297px;
+}
+                 
+
+                .about-pharagraf-all {
+                    margin-bottom: 12px;
+                }
+
+    /* .about-text::before {
                 width: 394px;
                 height: 297px;
-                background-image: url('../img/bg-img-x1/bg6-tablet-x1.png');
+               
 
                                 }
 
@@ -262,7 +287,7 @@
                             
     right: 0;
                              
-                         }
+                         } */
         .about-title {
             font-weight: 400;
             font-size: 108px;
@@ -272,42 +297,29 @@
             font-size: 36px;
         }
 
-
+.about-text-container {
+    margin-bottom: 40px;
+}
                 
                 .about-section {
-                    margin: 0 auto;
+                
                     width: 904px;
                     height: 280px;
                     display: flex;
-                    justify-content: space-between;
-            
+                    justify-content: center;
+           
                 
                     box-sizing: border-box;
                     gap: 136px;
-                        margin-top: 80px;
-                    
+                    margin-top: 80px;
+
+             
                 }
         
                 
-                .education-block,
-                .role-block {
-                    width: 48%;
-                    
-                }
-        
-               
-                .about-list-education {
-                    list-style: none;
-                   
-                    padding: 0;
-                }
-        
-                .about-item-education {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                }
-        
-            
+        .about-item-education {
+            margin-bottom: 16px;
+        }
+                
 
   }
