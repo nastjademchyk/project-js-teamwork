@@ -109,6 +109,59 @@ font-family: "Poppins", sans-serif;
             font-size: 20px;
 }
 
+
 }
 
-/* @media only screen and (min-width: 1280px) {} */ 
+@media only screen and (min-width: 1280px) {
+
+.faq {
+    position: relative;
+            background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: auto;
+    
+            
+        }
+        
+
+
+        
+        @media screen and (min-resolution: 192dpi) {
+            .faq {
+            background-image: url(../img/bg-img-x2/bg4-desc-x2.png);
+            }
+        }
+
+
+.accordion-container {
+max-width: 592px;
+position: absolute;
+left: 656px;
+top: 276px;
+
+}
+
+.faq-title {
+max-width: 520px;
+letter-spacing: 0.02em;
+margin-bottom: 60px;
+}
+
+.ac-trigger {
+display: flex;
+gap: 24px;
+justify-content: space-between;
+align-items: flex-center;
+text-align: left;
+width: 100%;
+border: none;
+padding: 0;
+line-height: 1.6;
+font-size: 20px;
+}
+
+
+
+}
+
