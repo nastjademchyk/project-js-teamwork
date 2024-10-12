@@ -9,7 +9,7 @@
 
   @media (min-resolution: 192dpi) {
     .container-work-together {
-      background-image: url('../img/bg-img-x1/bg7-tablet-x2.png');
+      background-image: url('../img/bg-img-x2/bg7-tablet-x2.png');
     }
   }
 }
@@ -23,7 +23,7 @@
 
   @media (min-resolution: 192dpi) {
     .container-work-together {
-      background-image: url('../img/bg-img-x1/bg3-desc-x2.png');
+      background-image: url('../img/bg-img-x2/bg3-desc-x2.png');
     }
   }
 }
@@ -295,4 +295,29 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ======================= */
+
+/* .form-input-email:invalid {
+  border-color: red;
+}
+
+.form-input-email:valid {
+  border-color: green;
+}
+
+.form-status-error-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: relative;
+}*/
+
+.error-border {
+  border-color: 1px solid var(--color-error);
 }
