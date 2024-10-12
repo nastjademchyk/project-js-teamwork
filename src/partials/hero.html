@@ -1,3 +1,80 @@
-<section class="hero">
-  <div class="container"></div>
+<section class="hero light-theme">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="h1-img">
+        <h1>
+          hello, i am <span class="accent-color">fullstack developer</span>
+        </h1>
+        <picture>
+          <source
+            srcset="
+              ./img/hero-img-light/hero-desc-light-x1.jpg 1x,
+              ./img/hero-img-light/hero-desc-light-x2.jpg 2x
+            "
+            media="(prefers-color-scheme: light) and (min-width: 1280px)"
+          />
+          <img
+            class="hero-light-img"
+            src="../img/hero-img-light/hero-desc-light-x1.jpg"
+            alt="man"
+            width="592"
+            height="444"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="desk-arrow-text">
+        <div class="arrow-box">
+          <svg class="arrow-icon" width="28" height="16">
+            <use href="../img/icons-svg.svg#icon-Arrow-hero"></use>
+          </svg>
+          <a href="#work-together" class="hero-text-order">
+            <span class="order-square"></span>ORDER THE PROJECT</a
+          >
+        </div>
+        <p class="hero-text">
+          I work with people all over the world to create
+          <span class="accent-color">impressive</span> and
+          <span class="accent-color">functional</span> websites that reflect
+          each client’s unique personality.
+        </p>
+      </div>
+    </div>
+    <div class="container-social-links">
+      <ul class="hero-social-links-list">
+        <li class="hero-link">
+          <a
+            href="https://www.instagram.com/goitclub/ "
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="hero-link">
+          <a
+            href=" https://www.facebook.com/goITclub/ "
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="hero-link">
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it "
+            rel="noopener noreferrer"
+            target="_blank"
+            >Linkedin</a
+          >
+        </li>
+        <li class="hero-link">
+          <a
+            href="https://github.com/nastjademchyk/project-js-teamwork"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
