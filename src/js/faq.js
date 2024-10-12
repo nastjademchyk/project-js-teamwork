@@ -6,7 +6,7 @@ new Accordion('.accordion-container', {
 elementClass: 'ac-item',
 triggerClass: 'faq-icon',
 panelClass: 'ac-panel',
-duration: 800,
+duration: 600,
 openOnInit: [0],
 beforeOpen: el =>
     el.querySelector('button.ac-trigger').setAttribute('aria-expanded', true),

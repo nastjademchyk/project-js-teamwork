@@ -1,4 +1,3 @@
-
 .faq-title {
     font-family: "Impact", sans-serif;
     font-weight: 400;
@@ -13,13 +12,12 @@
 .ac-item {
     border-bottom: 1px solid #e4e5e6;
     padding: 28px 24px;
-} 
-
-.ac-item.is-active {
-border-radius: 16px; 
-background: #bcdfd1; 
 }
 
+.ac-item.is-active {
+    border-radius: 16px;
+    background: #bcdfd1;
+}
 
 .ac-trigger {
     display: flex;
@@ -30,7 +28,7 @@ background: #bcdfd1;
     width: 100%;
     border: none;
     padding: 0;
-font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.55;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -40,7 +38,6 @@ font-family: "Poppins", sans-serif;
     background-color: transparent;
     cursor: auto;
 }
-
 
 .faq-icon {
     padding: 8px;
@@ -55,7 +52,7 @@ font-family: "Poppins", sans-serif;
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: max-height 0.3s ease;    
+    transition: max-height 0.3s ease;
 }
 
 .ac-text {
@@ -72,7 +69,6 @@ font-family: "Poppins", sans-serif;
     visibility: visible;
 }
 
-
 .ac-item.open .ac-panel {
     display: block;
 }
@@ -86,81 +82,77 @@ font-family: "Poppins", sans-serif;
 }
 
 
-
 @media only screen and (min-width: 768px) {
 
     .faq-title {
-            font-size: 108px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
-            margin-bottom: 60px;
-        }
+        font-size: 108px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        margin-bottom: 60px;
+    }
 
-        .ac-trigger {
-            display: flex;
-            gap: 24px;
-            justify-content: space-between;
-            align-items: flex-center;
-            text-align: left;
-            width: 100%;
-            border: none;
-            padding: 0;
-            line-height: 1.6;
-            font-size: 20px;
-}
-
+    .ac-trigger {
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        align-items: flex-center;
+        text-align: left;
+        width: 100%;
+        border: none;
+        padding: 0;
+        line-height: 1.6;
+        font-size: 20px;
+    }
 
 }
 
 @media only screen and (min-width: 1280px) {
 
-.faq {
-    position: relative;
-            background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
-            background-repeat: no-repeat;
-            background-position: left bottom;
-            background-size: auto;
-    
-            
-        }
+    .faq {
+        background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
+        background-repeat: no-repeat;
+        background-position: bottom 240px left 32px;
+        background-size: 526px 408px;
+        background-position: absolute;
         
+    }
 
 
-        
-        @media screen and (min-resolution: 192dpi) {
-            .faq {
-            background-image: url(../img/bg-img-x2/bg4-desc-x2.png);
-            }
+    @media screen and (min-resolution: 192dpi) {
+        .faq {
+            background-image: url(../img/bg-img-x1/bg4-desc-x1.png), 
+            url(../img/bg-img-x2/bg4-desc-x2.png);
+        }
+    }
+
+        .faq-container {
+            display: flex;
+            gap: 104px;
         }
 
+    .accordion-container {
+        max-width: 592px;
+        margin-top: 276px;
+    }
 
-.accordion-container {
-max-width: 592px;
-position: absolute;
-left: 656px;
-top: 276px;
+    .faq-title {
+        max-width: 520px;
+        letter-spacing: 0.02em;
+        margin-bottom: 60px;
+    }
 
-}
-
-.faq-title {
-max-width: 520px;
-letter-spacing: 0.02em;
-margin-bottom: 60px;
-}
-
-.ac-trigger {
-display: flex;
-gap: 24px;
-justify-content: space-between;
-align-items: flex-center;
-text-align: left;
-width: 100%;
-border: none;
-padding: 0;
-line-height: 1.6;
-font-size: 20px;
-}
-
+    .ac-trigger {
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        align-items: flex-center;
+        text-align: left;
+        width: 100%;
+        border: none;
+        padding: 0;
+        line-height: 1.6;
+        font-size: 20px;
+    }
 
 
 }
