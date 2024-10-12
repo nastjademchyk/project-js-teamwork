@@ -119,6 +119,10 @@
 
   }
 
+  /*  */
+
+
+
 
 }
 
@@ -151,12 +155,21 @@
   }
 
 
-  /* .benefits-list {
+  .benefits-list {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: flex-end;
+
     gap: 32px;
 
-  } */
+  }
 
+  .benefits-item:first-child {
+    order: 2;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  .benefits-item:not(:first-child) {
+    flex: 1 1 calc(33.33% - 32px);
+  }
 }
