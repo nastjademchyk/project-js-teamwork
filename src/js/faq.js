@@ -4,7 +4,7 @@ import 'accordion-js/dist/accordion.min.css';
 
 new Accordion('.accordion-container', {
 elementClass: 'ac-item',
-triggerClass: 'faq-icon',
+triggerClass: 'ac-header',
 panelClass: 'ac-panel',
 duration: 600,
 openOnInit: [0],
