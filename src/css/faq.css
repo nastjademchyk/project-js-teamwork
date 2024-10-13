@@ -1,3 +1,4 @@
+
 .faq-title {
     font-family: "Impact", sans-serif;
     font-weight: 400;
@@ -36,7 +37,7 @@
     font-size: 18px;
     font-weight: 400;
     background-color: transparent;
-    cursor: auto;
+    /* cursor: auto; */
 }
 
 .faq-icon {
@@ -52,9 +53,9 @@
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease; 
 }
-
+/* transform max-height */
 .ac-text {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -84,6 +85,9 @@
 
 @media only screen and (min-width: 768px) {
 
+    /* .faq-container {
+        height: 1120px;
+    } */
     .faq-title {
         font-size: 108px;
         line-height: 1.14;
@@ -103,54 +107,39 @@
         line-height: 1.6;
         font-size: 20px;
     }
-
 }
 
 
-
 @media only screen and (min-width: 1280px) {
-        .faq-container {
-            background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
-            background-repeat: no-repeat;
-            background-size: 526px 408px;
-            background-position: 0px 100%;
+
+    .faq-container {
+        background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
+        background-repeat: no-repeat;
+        background-size: 526px 408px;
+        background-position: 32px 100%;
         }
 
-        @media screen and (min-resolution: 192dpi) {
-            .faq-container {
-                background-image: url(../img/bg-img-x2/bg4-desc-x2.png);
-            }
+    @media screen and (min-resolution: 192dpi) {
+        .faq-container {
+        background-image: url(../img/bg-img-x2/bg4-desc-x2.png);
+        }
         }
 
-        .faq-container {
-            display: flex;
-            gap: 104px;
-        }
+    .faq-container {
+    display: flex;
+    gap: 104px;
+    height: 1020px;
+    }
 
     .accordion-container {
-        max-width: 592px;
-        margin-top: 276px;
+    max-width: 592px;
+    margin-top: 276px;
     }
-
+    
     .faq-title {
-        max-width: 520px;
-        letter-spacing: 0.02em;
-        margin-bottom: 60px;
+    max-width: 520px;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
     }
-
-    .ac-trigger {
-        display: flex;
-        gap: 24px;
-        justify-content: space-between;
-        align-items: flex-center;
-        text-align: left;
-        width: 100%;
-        border: none;
-        padding: 0;
-        line-height: 1.6;
-        font-size: 20px;
-    }
-
-
 }
 
