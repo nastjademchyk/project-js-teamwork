@@ -106,24 +106,21 @@
 
 }
 
+
+
 @media only screen and (min-width: 1280px) {
-
-    .faq {
-        background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
-        background-repeat: no-repeat;
-        background-position: bottom 240px left 32px;
-        background-size: 526px 408px;
-        background-position: absolute;
-        
-    }
-
-
-    @media screen and (min-resolution: 192dpi) {
-        .faq {
-            background-image: url(../img/bg-img-x1/bg4-desc-x1.png), 
-            url(../img/bg-img-x2/bg4-desc-x2.png);
+        .faq-container {
+            background-image: url(../img/bg-img-x1/bg4-desc-x1.png);
+            background-repeat: no-repeat;
+            background-size: 526px 408px;
+            background-position: 0px 100%;
         }
-    }
+
+        @media screen and (min-resolution: 192dpi) {
+            .faq-container {
+                background-image: url(../img/bg-img-x2/bg4-desc-x2.png);
+            }
+        }
 
         .faq-container {
             display: flex;
