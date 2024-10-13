@@ -48,10 +48,7 @@
 .modal-close:hover svg {
   stroke: #00b068;
 }
-.header-logo {
-  margin-left: 20px;
-  margin-top: 20px;
-}
+
 .modal-nav-section {
   width: 100%;
   height: 100%;

@@ -7,6 +7,7 @@
   max-width: 1280px;
   min-width: 320px;
   width: 100%;
+
   padding: 40px 20px 24px 20px;
   box-sizing: border-box;
 }
@@ -108,6 +109,7 @@
 
   .footer-logo {
     font-size: 32px;
+    margin-bottom: 0;
   }
 
   .footer-social {

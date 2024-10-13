@@ -110,8 +110,11 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 36px 32px;
+  .header .container {
+    padding: 32px 32px;
+  }
+  .header-logo {
+    margin-left: 0;
   }
   .page-nav {
     width: 100%;
