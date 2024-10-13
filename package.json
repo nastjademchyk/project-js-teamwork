@@ -19,6 +19,7 @@
   "dependencies": {
     "accordion-js": "^3.3.4",
     "axios": "^1.7.7",
+    "animejs": "^3.2.2",
     "izitoast": "^1.4.0",
     "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.2.0",

@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .arrow-box {
@@ -61,7 +62,7 @@ h1 {
 
 .order-square {
   border-radius: 16px;
-  width: 165px;
+  min-width: 165px;
   height: 92px;
   background: #bcdfd1;
   position: absolute;
@@ -69,6 +70,12 @@ h1 {
   z-index: -1;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  .order-square {
+    right: -62px;
+  }
 }
 
 .hero-text-order:hover .order-square {
@@ -83,10 +90,6 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
-}
-
-p:last-child {
-  margin-bottom: 72px;
 }
 
 .hero-link {
@@ -117,6 +120,9 @@ p:last-child {
   display: none;
 }
 
+.desk-arrow-text {
+  margin-bottom: 72px;
+}
 .light-theme .hero-content {
   background-image: url(../img/bg-hero-img-lx1/bg-hero-mob-light-x1.png);
   background-repeat: no-repeat;
@@ -134,10 +140,6 @@ p:last-child {
   .h1-img {
     margin-top: 88px;
     margin-bottom: 60px;
-  }
-
-  p:last-child {
-    margin-bottom: 104px;
   }
 
   .order-square {
@@ -182,6 +184,10 @@ p:last-child {
     }
   }
 
+  .desk-arrow-text {
+    margin-bottom: 104px;
+  }
+
   /*-----------------Desktop----------------*/
 
   @media only screen and (min-width: 1280px) {
@@ -198,10 +204,6 @@ p:last-child {
       align-items: center;
       margin-bottom: 96px;
       justify-content: space-between;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     .hero-text {
