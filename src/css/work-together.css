@@ -1,6 +1,8 @@
 /* ========== Background img ========== */
 @media only screen and (min-width: 768px) {
-  .container-work-together {
+  .work-together::after {
+    display: block;
+    content: '';
     background-image: url('../img/bg-img-x1/bg7-tablet-x1.png');
     background-repeat: no-repeat;
     background-position-x: right;
@@ -8,21 +10,21 @@
   }
 
   @media (min-resolution: 192dpi) {
-    .container-work-together {
+    .work-together::after {
       background-image: url('../img/bg-img-x2/bg7-tablet-x2.png');
     }
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .container-work-together {
+  .work-together::after {
     background-image: url('../img/bg-img-x1/bg3-desc-x1.png');
     /* background-position-x: right;
         background-position-y: -120px; */
   }
 
   @media (min-resolution: 192dpi) {
-    .container-work-together {
+    .work-together::after {
       background-image: url('../img/bg-img-x2/bg3-desc-x2.png');
     }
   }
