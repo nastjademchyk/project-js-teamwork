@@ -1,7 +1,3 @@
-.my-projects {
-}
-.container {
-}
 .title {
   font-family: 'Impact', sans-serif;
   /* font-weight: 400;
@@ -41,8 +37,8 @@
 }
 .content-container {
   /* display: flex;
-  align-items: flex-end;
-  margin-top: 16px; */
+  align-items: flex-end; */
+  margin-top: 12px;
 }
 /* .item-content {
   display: flex;

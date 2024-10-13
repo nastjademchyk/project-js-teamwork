@@ -5,21 +5,22 @@ const loadMoreBtn = document.querySelector('.btn-load');
 let currentIndex = 0;
 
 const showItems = () => {
-  projects.forEach((item, index) => {
-    if (index >= currentIndex && index < currentIndex + 3) {
-      item.classList.remove('is-hidden');
+  for (let i = currentIndex; i < currentIndex + 3; i++) {
+    if (projects[i]) {
+      projects[i].classList.remove('is-hidden');
       loadMoreBtn.classList.remove('is-hidden');
     }
+  }
+
+  const itemHeight = projects[0].getBoundingClientRect().height;
+  window.scrollBy({
+    top: itemHeight * 0.5,
+    left: 0,
+    behavior: 'smooth',
   });
 
-  if (scrollHeight > 0) {
-    window.scrollBy({
-      top: scrollHeight,
-      left: 0,
-      behavior: 'smooth',
-    });
-  }
   currentIndex += 3;
+
   if (currentIndex >= projects.length) {
     loadMoreBtn.classList.add('is-hidden');
     iziToast.info({
@@ -29,17 +30,5 @@ const showItems = () => {
   }
 };
 
-showItems();
 loadMoreBtn.addEventListener('click', showItems);
-
-// function loadMoreScroll() {
-//   const lastHit = gallery.lastElementChild;
-//   const hitHeight = lastHit.getBoundingClientRect().height;
-//   const scrollHeight = hitHeight * 3;
-
-//   window.scrollBy({
-//     top: scrollHeight,
-//     left: 0,
-//     behavior: 'smooth',
-//   });
-// }
+showItems();
