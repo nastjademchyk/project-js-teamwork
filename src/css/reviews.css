@@ -6,7 +6,7 @@
   line-height: var(--h2-mobile-line-height);
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .reviews-list {
@@ -99,10 +99,17 @@
   height: auto !important;
 }
 
+@media (min-width: 768px) {
+    .reviews-title {
+        padding-bottom: 60px;
+    }
+}
+
 @media (min-width: 1280px) {
   .reviews-title {
     font-size: var(--h2-desktop-font-size);
     line-height: var(--h2-desktop-line-height);
     letter-spacing: var(--h2-desktop-letter-spacing);
+    padding-bottom: 80px;
   }
 }
