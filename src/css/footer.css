@@ -92,7 +92,7 @@
     letter-spacing: 0.03em;
   }
   .footer-copyright {
-    width: 351px;
+    width: 100%;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 0;
