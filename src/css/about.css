@@ -88,16 +88,6 @@
     color: #292929;
   }
 
-/* .marker {
-    border-radius: 1px;
-    width: 4px;
-    height: 4px;
-    background: #00B068;
-    transform: rotate(-180deg);
-    margin-right: 10px;
-    flex-shrink: 0;
-} */
-
 .about-item-education {
     max-width: 100%;
     padding-left: 32px;
@@ -105,9 +95,9 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    margin-bottom: 12px;
+    line-height: 1,5;
+    letter-spacing: 0.03em;
+    padding-bottom: 12px;
     max-width: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -135,6 +125,14 @@
         line-height: 1.15;
         letter-spacing: 0.02em;
     }
+    .about-title-two{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.33333;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #292929;
+    }   
 
     .foto {
         display: flex;
@@ -142,7 +140,7 @@
         }
 
     .ab-im {
-        padding-top: 408px;
+        padding-top: 368px;
          }
 
     .about-image {
@@ -162,7 +160,7 @@
     .about-text::before {
         content: "";
         position: absolute;
-        top: 104%;
+        top: 100%;
         left: 0;
         width: 336px;
         height: 252px;
@@ -178,8 +176,13 @@
         justify-content: center;
         gap: 32px;
         margin-top: 60px;
-        
         }
+
+    .about-item-education {
+        padding-bottom: 16px;
+        line-height: 1,5;
+        letter-spacing: 0.03em;
+    }
         
     .education-block,
     .role-block {
@@ -198,8 +201,7 @@
     .about-title {
         font-weight: 400;
         font-size: 108px;
-
-                line-height: 1.15;
+        line-height: 1.15;
         }
 
     .foto {
@@ -208,7 +210,7 @@
      }
 
     .ab-im {
-        padding-top: 312px;
+        padding-top: 272px;
      }
 
     .about-image {
@@ -265,9 +267,5 @@
         margin-left: 210px;
         margin-top: 80px;
                 }
-
-    .about-item-education {
-        margin-bottom: 16px;
-        }        
 
   }
