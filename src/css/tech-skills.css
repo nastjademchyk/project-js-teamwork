@@ -1,14 +1,14 @@
-.tech_nav {
+.tech-nav {
     visibility: hidden;
 }
 
-.tech_primery {
+.tech-primery {
     padding: 0;
     max-width: 100%;
 }
 
-.tech_container {
-    height: 244px;
+.tech-container {
+    max-height: 244px;
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
@@ -16,46 +16,48 @@
     overflow: hidden;
 }
 
-.tech_line {
+.tech-line {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
     height: 104px;
-    position: relative;
 }
 
-.tech_line_track, .tech_line_track_second {
+.tech-line-track, .tech-line-track-second {
     display: flex;
-    animation: tech_move_text 10s cubic-bezier(0, 0, 1, 1) infinite;
+    animation: tech-move-text 10s cubic-bezier(0, 0, 1, 1) infinite;
 
-    white-space: nowrap;
-    position: absolute;
-
-    padding: 32px 0;
     gap: 16px;
 }
 
-.tech_line_track_second {
+.tech-line-track-second {
     animation-direction: reverse;
 }
 
-.background_tech_one {
+.background-tech-one {
     z-index: 1;
     background-color: #BCDFD1;
 }
 
 
-.background_tech_two {
+.background-tech-two {
     background-color: #E4E5E6;
     rotate: 2deg;
 }
 
-.tech_item_one,
-.tech_item_two {
+.tech-item-one,
+.tech-item-two {
     position: relative;
     white-space: nowrap;
 }
 
+.tech-item-two {
+    color:#00B068
+}
 
-.tech_item_one:not(:last-child)::after,
-.tech_item_two:not(:last-child)::after {
+
+.tech-item-one:not(:last-child)::after,
+.tech-item-two:not(:last-child)::after {
     content: '';
     display: inline-block;
     width: 8px;
@@ -68,11 +70,11 @@
     vertical-align: middle;
 }
 
-.tech_item_two:not(:last-child)::after {
+.tech-item-two:not(:last-child)::after {
     background-color: #292929;
 }
 
-@keyframes tech_move_text {
+@keyframes tech-move-text {
     0% {
             transform: translateX(0%);
         }
@@ -83,19 +85,24 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .tech_container {
-        height: 280px;
+    .tech-container {
+        max-height: 280px;
     }
-
-    .tech_container {
+    
+    .tech-container {
         font-size: 36px;
         line-height: 48px;
         letter-spacing: 0.5px;
     }
+
+    .tech-line {
+        height: 128px;
+        padding: 40px 0;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
-        .tech_line {
+        .tech-line {
             left: 0;
         }
 }
