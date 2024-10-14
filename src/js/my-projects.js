@@ -12,12 +12,17 @@ const showItems = () => {
     }
   }
 
-  if (projects[currentIndex]) {
-    projects[currentIndex].scrollIntoView({
-      behavior: 'smooth',
-      block: 'end',
-    });
-  }
+  // if (projects[currentIndex]) {
+  //   projects[currentIndex].scrollIntoView({
+  //     behavior: 'smooth',
+  //     block: 'end',
+  //   });
+  // }
+  projects[currentIndex].scrollBy({
+    top: 100,
+    left: 100,
+    behavior: 'smooth',
+  });
 
   currentIndex += 3;
 
