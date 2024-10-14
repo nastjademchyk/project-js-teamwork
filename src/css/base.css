@@ -140,7 +140,9 @@ section {
 .dark-theme .work-together-title,
 .dark-theme .footer,
 .dark-theme .footer-social a,
-.dark-theme .btn-load {
+.dark-theme .btn-load,
+.dark-theme .icon-burger,
+.dark-theme .ac-item {
   background-color: #292929;
   color: #f0f0f0;
 }
@@ -148,11 +150,16 @@ section {
   background: #204136;
 }
 
-.dark-theme .ac-item.is-active {
+.dark-theme .ac-item.is-active,
+.dark-theme .background-tech-one {
   background: #204136;
 }
 .dark-theme .container-social-links,
-.dark-theme .form-input {
+.dark-theme .form-input,
+.dark-theme .background-tech-two,
+.dark-theme .link-project,
+.dark-theme .review-item,
+.dark-theme .review-text {
   background: #2a2d32;
 }
 .dark-theme .order-square {
@@ -161,7 +168,9 @@ section {
 .dark-theme .left-contact-icon {
   stroke: #14c57c;
 }
-
+.dark-theme .tech-item-two {
+  color: #14c57c;
+}
 .dark-theme .svg-chat,
 .dark-theme .svg-brush,
 .dark-theme .svg-user,
@@ -176,4 +185,27 @@ section {
 
 .dark-theme .form-input::placeholder {
   color: #f0f0f0;
+}
+
+.dark-theme .faq-icon {
+  stroke: #f0f0f0;
+}
+
+.dark-theme .link-project:hover {
+  background: #3b3f45;
+}
+
+.dark-theme .tech-item-one,
+.dark-theme .ac-panel,
+.dark-theme .ac-trigger,
+.dark-theme .ac-text {
+  background: #204136;
+}
+
+.dark-theme .tech-item-two {
+  background: #2a2d32;
+}
+
+.dark-theme .ac-trigger {
+  background-color: transparent;
 }
