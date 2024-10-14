@@ -1,30 +1,30 @@
 /* ========== Background img ========== */
 @media only screen and (min-width: 768px) {
-  .work-together::after {
+  .container-work-together {
     display: block;
     content: '';
     background-image: url('../img/bg-img-x1/bg7-tablet-x1.png');
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: -120px;
+    background-position-y: 0px;
   }
 
   @media (min-resolution: 192dpi) {
-    .work-together::after {
+    .work-together {
       background-image: url('../img/bg-img-x2/bg7-tablet-x2.png');
     }
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .work-together::after {
+  .container-work-together {
     background-image: url('../img/bg-img-x1/bg3-desc-x1.png');
     /* background-position-x: right;
         background-position-y: -120px; */
   }
 
   @media (min-resolution: 192dpi) {
-    .work-together::after {
+    .container-work-together {
       background-image: url('../img/bg-img-x2/bg3-desc-x2.png');
     }
   }
@@ -164,6 +164,11 @@
   font-size: 16px;
 }
 
+.left-contact-link:hover,
+.left-contact-link:focus {
+  color: var(--color-accent-green);
+}
+
 .left-contact-icon {
   stroke: var(--color-accent-green);
   fill: transparent;
@@ -253,6 +258,7 @@
 .form-button:hover,
 .form-button:focus {
   background-color: var(--color-hover-green);
+  outline: none;
 }
 
 /* ========== Validation ========== */
