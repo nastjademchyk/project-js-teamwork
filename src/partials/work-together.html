@@ -1,3 +1,71 @@
 <section class="work-together" id="work-together">
-  <div class="container"></div>
+  <div class="container container-work-together">
+    <h2 class="work-together-title">
+      let's <span class="accent-color">work together</span>
+    </h2>
+    <div class="work-together-wrap">
+      <div class="work-together-left">
+        <p class="left-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <ul class="left-contact-list">
+          <li class="left-contact-link">
+            <svg class="left-contact-icon" width="24" height="24">
+              <use href="./img/icons-svg.svg#icon-icon-phone"></use>
+            </svg>
+            <a href="tel:+38 090 456 78 90" class="contakt-tel"
+              >+38 090 456 78 90</a
+            >
+          </li>
+          <li class="left-contact-link">
+            <svg class="left-contact-icon" width="24" height="24">
+              <use href="./img/icons-svg.svg#icon-icon-email"></use>
+            </svg>
+            <a href="mailto:lloydjefferson@gmail.com" class="contakt-email"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li class="left-contact-link">
+            <svg class="left-contact-icon" width="24" height="24">
+              <use href="./img/icons-svg.svg#icon-icon-location"></use>
+            </svg>
+            <a
+              href="https://maps.app.goo.gl/5xLfcEBCyVQVZEj98"
+              class="contakt-location"
+              >USA, New York</a
+            >
+          </li>
+        </ul>
+      </div>
+      <form class="work-together-right" autocomplete="off" novalidate>
+        <div class="form-input-wrap">
+          <input
+            class="form-input-email form-input"
+            type="email"
+            name="email"
+            required
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            minlength="6"
+            maxlength="64"
+          />
+          <svg class="form-input-icon" width="16" height="16">
+            <use href="./img/icons-svg.svg#icon-icon-success-filled"></use>
+          </svg>
+          <span class="form-status-error">Invalid email, try again </span>
+        </div>
+
+        <textarea
+          class="form-input-comments form-input"
+          name="comments"
+          required
+          placeholder="Message"
+        ></textarea>
+        <button class="form-button" type="submit" name="send_order">
+          Send Message
+        </button>
+      </form>
+      <div class="modal-container"></div>
+    </div>
+  </div>
 </section>
