@@ -16,7 +16,7 @@ import{a,i as u,A as M,b as B,S as j}from"./assets/vendor-_9fXnX53.js";(function
       </li>
     `,f.disabled=!0,v.disabled=!0)}P();function $({title:e,message:t}){return`
   <div class="backdrop">
-    <div class="modal">
+    <div class="modal-form">
         <button class="modal-close-btn" type="button ">
         <svg class="modal-close-icon" width="24" height="24">
             <use href="./img/icons-svg.svg#icon-icon-close-menu"></use>
