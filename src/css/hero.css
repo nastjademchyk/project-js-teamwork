@@ -101,6 +101,10 @@ h1 {
   color: #292929;
 }
 
+.hero-link:hover,
+.hero-link:focus {
+  color: #00b068;
+}
 .container-social-links {
   background: #e4e5e6;
   width: 100vw;
