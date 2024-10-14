@@ -92,6 +92,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #292929;
+  overflow-x: hidden;
 }
 
 main {
