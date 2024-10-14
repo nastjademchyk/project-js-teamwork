@@ -1,4 +1,3 @@
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -10,10 +9,6 @@ duration: 600,
 openOnInit: [0],
 beforeOpen: el =>
     el.querySelector('button.ac-trigger').setAttribute('aria-expanded', true),
-beforeClose: el =>
+  beforeClose: el =>
     el.querySelector('button.ac-trigger').setAttribute('aria-expanded', false),
 });
-
-
-
-
