@@ -8,7 +8,7 @@
   background: rgba(41, 41, 41, 0.8);
 }
 
-.modal {
+.modal-form {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,7 +60,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .modal {
+  .modal-form {
     width: 492px;
     min-height: 280px;
   }

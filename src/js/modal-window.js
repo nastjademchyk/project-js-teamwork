@@ -3,7 +3,7 @@
 export function createModal({ title, message }) {
   return `
   <div class="backdrop">
-    <div class="modal">
+    <div class="modal-form">
         <button class="modal-close-btn" type="button ">
         <svg class="modal-close-icon" width="24" height="24">
             <use href="./img/icons-svg.svg#icon-icon-close-menu"></use>
