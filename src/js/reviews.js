@@ -11,6 +11,7 @@ const prevBtn = document.querySelector('.swiper-prev-btn');
 const reviewsSection = document.querySelector('.reviews');
 
 let reviewsFetched = false;
+let reviewsExist = false;
 
 async function fetchReviews() {
   try {
@@ -18,18 +19,25 @@ async function fetchReviews() {
     const data = response.data;
 
     // Uncomment to test error showing when reviews are empty.
-    // data.length = 0;
+    //  data.length = 0;
 
     if (data.length === 0) {
+      // No reviews found
+      reviewsExist = false;
       reviewsFetched = false;
     } else {
+      // Reviews exist
+      reviewsExist = true;
       reviewsFetched = true;
       renderReviews(data);
       initializeSwiper();
     }
+
+    observeReviewsSection();
   } catch (error) {
-    reviewsFetched = false;
     console.error(error);
+    reviewsFetched = false;
+    observeReviewsSection();
   }
 }
 
@@ -87,35 +95,39 @@ function initializeSwiper() {
   });
 }
 
-// Intersection Observer setup
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !reviewsFetched) {
-      showErrorAndNotFound();
-      observer.unobserve(entry.target);
-    }
+// Observer logic
+function observeReviewsSection() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !reviewsFetched) {
+        showErrorAndNotFound();
+        observer.unobserve(entry.target);
+      }
+    });
   });
-});
 
-observer.observe(reviewsSection);
+  observer.observe(reviewsSection);
+}
 
 function showErrorAndNotFound() {
-  iziToast.error({
-    title: 'Error',
-    message: 'Reviews not found.',
-    position: 'topRight',
-  });
+  if (!reviewsExist) {
+    iziToast.error({
+      title: 'Error',
+      message: 'Reviews not found.',
+      position: 'topRight',
+    });
 
-  reviewsList.innerHTML = `
-    <li class="swiper-slide review-item">
-      <div class="review-item-container">
-        <p class="review-text">Not Found</p>
-      </div>
-    </li>
-  `;
+    reviewsList.innerHTML = `
+      <li class="swiper-slide review-item">
+        <div class="review-item-container">
+          <p class="review-text">Not Found</p>
+        </div>
+      </li>
+    `;
 
-  prevBtn.disabled = true;
-  nextBtn.disabled = true;
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+  }
 }
 
 // Initial fetch of reviews
