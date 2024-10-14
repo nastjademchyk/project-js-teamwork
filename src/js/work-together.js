@@ -10,7 +10,6 @@ const refs = {
 };
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
-
 const options = {
   method: 'POST',
   headers: {
@@ -18,6 +17,7 @@ const options = {
     accept: 'application/json',
   },
 };
+
 const createContact = async post => {
   options.body = JSON.stringify(post);
   try {
@@ -29,87 +29,57 @@ const createContact = async post => {
     throw error;
   }
 };
-
-const onSbmit = e => {
+const onSubmit = async e => {
   e.preventDefault();
-
   const { email, comments } = e.target.elements;
-
   const objData = {
     email: email.value,
     comment: comments.value,
   };
-
-  // =================================================================
-  // Перевіряюмо чи порожні поля вводу
-
-  if (objData.email.trim() === '') {
+  // Валідація полів
+  if (objData.email.trim() === '' || objData.comment.trim() === '') {
     iziToast.error({
-      message: 'Field email is empty',
+      message: 'Please fill in all fields',
       position: 'center',
       messageColor: '#E74A3B',
       closeOnEscape: true,
-      icon: '',
     });
     return;
   }
 
-  if (objData.comment.trim() === '') {
+  // Відправка даних на сервер
+  try {
+    const { title, message } = await createContact(objData);
+    e.target.reset(); // очищаємо форму
+    const modalHTML = createModal({ title, message }); // Створюємо модальне вікно
+    refs.modalContainer.insertAdjacentHTML('beforeend', modalHTML); // Показ модального вікна
+    // Додаємо прослуховувачі подій для закриття модального вікна
+    const closeModalButton = document.querySelector('.modal-close-btn');
+    closeModalButton.addEventListener('click', closeModalWindow);
+    // Закриття модального вікна по кліку на backdrop
+    const backdrop = refs.modalContainer.querySelector('.backdrop');
+    backdrop.addEventListener('click', closeModalWindow);
+    // Закриття модального вікна по натисканню клавіші Escape
+    document.addEventListener('keydown', onEscKeyPress);
+  } catch (error) {
     iziToast.error({
-      message: 'Field comments is empty',
+      message: 'The server is not responding, try again later',
       position: 'center',
       messageColor: '#E74A3B',
       closeOnEscape: true,
-      icon: '',
     });
-    return;
   }
-
-  // =================================================================
-
-  createContact(objData)
-    .then(({ title, message }) => {
-      e.target.reset();
-      refs.modalContainer.insertAdjacentHTML(
-        'beforeend',
-        createModal({ title, message })
-      );
-      //   Додаємо прослуховувача подій на кнопку
-      const closeModalButton = document.querySelector('.modal-close-btn');
-      closeModalButton.addEventListener('click', closeModalWindow);
-      //   Додаємо прослуховувача подій на Esc
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          closeModalWindow();
-        }
-        location.reload();
-      });
-      //   Додаємо прослуховувача подій на backdrop
-      document.addEventListener('click', function (event) {
-        const modalWindow = document.querySelector('.backdrop');
-        if (event.target === modalWindow) {
-          closeModalWindow();
-        }
-        location.reload();
-      });
-    })
-    .catch(error => {
-      console.log(error);
-      iziToast.error({
-        message: 'The server is not responding, try again later',
-        position: 'center',
-        messageColor: '#E74A3B',
-        closeOnEscape: true,
-        icon: '',
-      });
-    });
 };
-refs.form.addEventListener('submit', onSbmit);
-
-// ================================================================
-
+// Функція для закриття модального вікна
 function closeModalWindow() {
   const modalWindow = document.querySelector('.backdrop');
-  modalWindow.style.display = 'none';
-  location.reload();
+  modalWindow?.remove(); // видаляємо модальне вікно з DOM
+  document.removeEventListener('keydown', onEscKeyPress); // Видаляємо слухача на клавіатуру
 }
+// Функція для закриття вікна при натисканні клавіші Escape
+function onEscKeyPress(event) {
+  if (event.key === 'Escape') {
+    closeModalWindow();
+  }
+}
+refs.form.addEventListener('submit', onSubmit);
