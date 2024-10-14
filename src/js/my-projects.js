@@ -12,12 +12,12 @@ const showItems = () => {
     }
   }
 
-  const itemHeight = projects[0].getBoundingClientRect().height;
-  window.scrollBy({
-    top: itemHeight * 0.5,
-    left: 0,
-    behavior: 'smooth',
-  });
+  if (projects[currentIndex]) {
+    projects[currentIndex].scrollIntoView({
+      behavior: 'smooth',
+      block: 'end',
+    });
+  }
 
   currentIndex += 3;
 
