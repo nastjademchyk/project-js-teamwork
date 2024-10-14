@@ -10,3 +10,4 @@ import './js/modal-window.js';
 import './js/switcher.js';
 import './js/api.js';
 import './js/render.js';
+import './js/about.js';
