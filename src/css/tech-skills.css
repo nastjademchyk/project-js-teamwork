@@ -22,12 +22,12 @@
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 0.5px;
-    overflow: hidden;
 }
 
 .tech-line {
     display: flex;
     align-items: center;
+    overflow: hidden;
     padding: 32px 0;
     height: 104px;
 }
