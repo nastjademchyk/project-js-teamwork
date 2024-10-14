@@ -131,7 +131,9 @@ section {
 .dark-theme h1,
 .dark-theme p,
 .dark-theme .hero-link,
-.dark-theme .hero-text-order {
+.dark-theme .hero-text-order,
+.dark-theme .about-item-education,
+.dark-theme .about-title-two {
   background-color: #292929;
   color: #f0f0f0;
 }
@@ -140,4 +142,12 @@ section {
 }
 .dark-theme .order-square {
   background: #14c57c;
+}
+
+.dark-theme .svg-chat,
+.dark-theme .svg-brush,
+.dark-theme .svg-user,
+.dark-theme .svg-hourglass {
+  background: #204136;
+  fill: #204136;
 }
