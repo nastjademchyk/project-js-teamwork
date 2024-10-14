@@ -133,15 +133,33 @@ section {
 .dark-theme .hero-link,
 .dark-theme .hero-text-order,
 .dark-theme .about-item-education,
-.dark-theme .about-title-two {
+.dark-theme .about-title-two,
+.dark-theme .benefits-h2,
+.dark-theme .faq-title,
+.dark-theme .ac-trigger,
+.dark-theme .work-together-title,
+.dark-theme .footer,
+.dark-theme .footer-social a,
+.dark-theme .btn-load {
   background-color: #292929;
   color: #f0f0f0;
 }
-.dark-theme .container-social-links {
+.dark-theme .ac-trigger .is-active {
+  background: #204136;
+}
+
+.dark-theme .ac-item.is-active {
+  background: #204136;
+}
+.dark-theme .container-social-links,
+.dark-theme .form-input {
   background: #2a2d32;
 }
 .dark-theme .order-square {
   background: #14c57c;
+}
+.dark-theme .left-contact-icon {
+  stroke: #14c57c;
 }
 
 .dark-theme .svg-chat,
@@ -150,4 +168,12 @@ section {
 .dark-theme .svg-hourglass {
   background: #204136;
   fill: #204136;
+}
+
+.dark-theme .form-status-error {
+  color: #e74a3b;
+}
+
+.dark-theme .form-input::placeholder {
+  color: #f0f0f0;
 }
