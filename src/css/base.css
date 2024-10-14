@@ -91,6 +91,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -98,6 +99,10 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .accent-color {
