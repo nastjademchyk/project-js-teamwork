@@ -17,18 +17,19 @@
 }
 
 .tech-container {
-  max-height: 244px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.5px;
+    max-height: 244px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
 }
 
 .tech-line {
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  height: 104px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 32px 0;
+    height: 104px;
 }
 
 .tech-line-track,
