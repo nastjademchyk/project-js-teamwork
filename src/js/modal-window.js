@@ -1,20 +1,19 @@
-const modalWindow = document.querySelector('.backdrop');
-const closeModalButton = document.querySelector('.modal-close-btn');
+// Функція розмітки модального вікна
 
-function closeModalWindow() {
-  modalWindow.style.display = 'none';
+export function createModal({ title, message }) {
+  return `
+  <div class="backdrop">
+    <div class="modal">
+        <button class="modal-close-btn" type="button ">
+        <svg class="modal-close-icon" width="24" height="24">
+            <use href="./img/icons-svg.svg#icon-icon-close-menu"></use>
+        </svg>
+        </button>
+        <div class="modal-wrapper">
+            <h3 class="modal-h3">${title}</h3>
+            <p class="modal-text">${message}</p>
+        </div>
+    </div>
+  </div>
+  `;
 }
-
-closeModalButton.addEventListener('click', closeModalWindow);
-
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'Escape') {
-    closeModalWindow();
-  }
-});
-
-modalWindow.addEventListener('click', function (event) {
-  if (event.target === modalWindow) {
-    closeModalWindow();
-  }
-});
