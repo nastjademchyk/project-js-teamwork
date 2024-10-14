@@ -37,7 +37,6 @@
     font-size: 18px;
     font-weight: 400;
     background-color: transparent;
-    /* cursor: auto; */
 }
 
 .faq-icon {
@@ -47,15 +46,15 @@
     stroke: #292929;
     fill: transparent;
     cursor: pointer;
-}
+} 
+
+
 
 .ac-panel {
-    max-height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: max-height 0.3s ease; 
 }
-/* transform max-height */
+
 .ac-text {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -68,6 +67,8 @@
 
 .ac-item.is-active .ac-panel {
     visibility: visible;
+    max-height: 1000px;
+
 }
 
 .ac-item.open .ac-panel {
@@ -85,9 +86,6 @@
 
 @media only screen and (min-width: 768px) {
 
-    /* .faq-container {
-        height: 1120px;
-    } */
     .faq-title {
         font-size: 108px;
         line-height: 1.14;
