@@ -11,6 +11,12 @@
 }
 
 
+
+
+
+
+
+
 .benefits-list {
   display: flex;
   flex-direction: column;
@@ -28,6 +34,44 @@
   letter-spacing: 0.03em;
 
 }
+
+
+/* липка */
+.benefits-h2 {
+
+  font-family: var(--font-impact);
+
+  letter-spacing: 0.03em;
+  font-size: 52px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 123%;
+  color: #292929;
+  margin-bottom: 40px;
+
+}
+
+.benefits-item-title {
+
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-black);
+
+}
+
+.benefits-item-content {
+  font-family: var(--font-poppins-light);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
+
 
 /* адаптив */
 
@@ -70,8 +114,8 @@
   }
 
   .benefits-item {
-    width: 320px;
-    height: 204px;
+    max-width: 320px;
+    max-height: 204px;
   }
 
 
@@ -115,8 +159,8 @@
   }
 
   .benefits-item {
-    width: 336px;
-    height: 208px;
+    max-width: 336px;
+    max-height: 208px;
     order: 1;
   }
 
