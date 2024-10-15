@@ -160,7 +160,8 @@ section {
 .dark-theme .link-project,
 .dark-theme .review-item,
 .dark-theme .review-text,
-.dark-theme .form-input {
+.dark-theme .form-input,
+.dark-theme .modal-wrapper {
   background: #2a2d32;
 }
 .dark-theme .order-square {
@@ -254,4 +255,24 @@ section {
 }
 .dark-theme .icon-burger-btn {
   background-color: #292929;
+}
+.dark-theme .modal-wrapper {
+  background: #2a2d32;
+  border: none;
+  border-radius: 16px;
+}
+.dark-theme .modal-form {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.dark-theme .modal-text {
+  background: #2a2d32;
+}
+
+.dark-theme .modal-close-btn {
+  stroke-width: 2px;
+  stroke: #f0f0f0;
+  background: #2a2d32;
 }
