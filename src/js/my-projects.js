@@ -4,7 +4,7 @@ const projects = document.querySelectorAll('.project-item');
 const loadMoreBtn = document.querySelector('.btn-load');
 let currentIndex = 0;
 
-const showItems = () => {
+const showItems = (scroll = false) => {
   for (let i = currentIndex; i < currentIndex + 3; i++) {
     if (projects[i]) {
       projects[i].classList.remove('is-hidden');
@@ -12,12 +12,15 @@ const showItems = () => {
     }
   }
 
-  const itemHeight = projects[0].getBoundingClientRect().height;
-  window.scrollBy({
-    top: itemHeight * 0.5,
-    left: 0,
-    behavior: 'smooth',
-  });
+  // Прокручувати сторінку тільки при натисканні на кнопку
+  if (scroll) {
+    const itemHeight = projects[0].getBoundingClientRect().height;
+    window.scrollBy({
+      top: itemHeight * 0.5,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
 
   currentIndex += 3;
 
@@ -30,5 +33,5 @@ const showItems = () => {
   }
 };
 
-loadMoreBtn.addEventListener('click', showItems);
-showItems();
+showItems(false);
+loadMoreBtn.addEventListener('click', () => showItems(true));
