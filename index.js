@@ -19,7 +19,7 @@ import{a,i as u,A as B,b as M,S as j}from"./assets/vendor-_9fXnX53.js";(function
     <div class="modal-form">
         <button class="modal-close-btn" type="button ">
         <svg class="modal-close-icon" width="24" height="24">
-            <use href="../img/icons-svg.svg#icon-icon-close-menu"></use>
+            <use href="./img/icons-svg.svg#icon-icon-close-menu"></use>
         </svg>
         </button>
         <div class="modal-wrapper">
