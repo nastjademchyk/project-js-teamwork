@@ -49,7 +49,7 @@ function renderReviews(reviews) {
           <div class="review-item-container">
             <p class="review-text">${review}</p>
             <div class="author-info">
-              <img class="author-avatar" src="${avatar_url}" alt="Author avatar" />
+              <img class="author-avatar" src="${avatar_url}" alt="Author avatar" loading="lazy"/>
               <p class="author-name">${author}</p>
             </div>
           </div>
