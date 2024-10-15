@@ -6,7 +6,7 @@
   line-height: var(--h2-mobile-line-height);
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .reviews-list {
@@ -31,7 +31,6 @@
   font-size: var(--body1-mobile-font-size);
   font-weight: 300;
   color: var(--color-black);
-  padding-bottom: 24px;
   line-height: 1.5;
 }
 
@@ -101,7 +100,7 @@
 
 @media (min-width: 768px) {
     .reviews-title {
-        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
 }
 
@@ -110,6 +109,6 @@
     font-size: var(--h2-desktop-font-size);
     line-height: var(--h2-desktop-line-height);
     letter-spacing: var(--h2-desktop-letter-spacing);
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
