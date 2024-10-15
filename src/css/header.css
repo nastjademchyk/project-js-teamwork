@@ -9,6 +9,10 @@
   overflow-x: hidden;
 }
 
+.modal {
+  background: #f0f0f0;
+}
+
 .header-logo {
   text-transform: uppercase;
   font-family: Impact;

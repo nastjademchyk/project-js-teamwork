@@ -51,7 +51,7 @@
 }
 
 .modal-nav-section {
-  background-image: url(../img/decor\ bg\ 8.png);
+  background-image: url(../img/bg-img-x1/bg8-desc-x1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20px center;
@@ -65,6 +65,12 @@
   margin-top: auto;
   align-items: center;
   justify-content: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .modal-nav-section {
+    background-image: url(../img/bg-img-x2/bg8-desc-x2.png);
+  }
 }
 .modal-nav-item {
   display: flex;
