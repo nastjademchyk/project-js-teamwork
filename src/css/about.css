@@ -63,19 +63,6 @@
   margin-bottom: 32px;
 }
 
-/* .special-dash {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: pink;
-    height: 32px;
-} */
-
-/* .dash-list-education {
-    height: 12px;
-} */
-
 .about-list-education {
   font-weight: 300;
   font-size: 16px;
@@ -161,12 +148,10 @@
     background-image: url('../img//bg-img-x1/bg6-tablet-x1.png');
     background-size: auto;
     background-repeat: no-repeat;
-    /* background-position: center bottom; */
     z-index: -1;
   }
 
   .about-section {
-    /* display: flex; */
     justify-content: center;
     gap: 32px;
     margin-top: 60px;
@@ -226,7 +211,6 @@
     background-image: url('../img/bg-img-x1/bg2-desc-x1.png');
     background-size: auto;
     background-repeat: no-repeat;
-    /* background-position: center bottom; */
     z-index: -1;
   }
 
@@ -249,9 +233,7 @@
   .about-section {
     width: 904px;
     height: 280px;
-    /* display: flex; */
     justify-content: flex-end;
-    /* box-sizing: border-box; */
     gap: 136px;
     margin-left: 210px;
     margin-top: 80px;
