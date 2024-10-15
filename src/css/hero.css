@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  min-height: 704px;
+  /* min-height: 704px; */
 }
 
 h1 {

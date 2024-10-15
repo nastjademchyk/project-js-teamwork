@@ -5,7 +5,7 @@ export function createModal({ title, message }) {
   return `
   <div class="backdrop">
     <div class="modal-form">
-        <button class="modal-close-btn" type="button ">
+        <button class="modal-close-btn" type="button " aria-label="Close modal window">
         <svg class="modal-close-icon" width="24" height="24">
             <use href="${pathIcons}#icon-icon-close-menu"></use>
         </svg>
