@@ -1,9 +1,9 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+const list = document.querySelector('.projects-list');
 const projects = document.querySelectorAll('.project-item');
 const loadMoreBtn = document.querySelector('.btn-load');
 let currentIndex = 0;
-
 const showItems = () => {
   for (let i = currentIndex; i < currentIndex + 3; i++) {
     if (projects[i]) {
@@ -11,18 +11,6 @@ const showItems = () => {
       loadMoreBtn.classList.remove('is-hidden');
     }
   }
-
-  // if (projects[currentIndex]) {
-  //   projects[currentIndex].scrollIntoView({
-  //     behavior: 'smooth',
-  //     block: 'end',
-  //   });
-  // }
-  projects[currentIndex].scrollBy({
-    top: 100,
-    left: 100,
-    behavior: 'smooth',
-  });
 
   currentIndex += 3;
 
@@ -34,6 +22,5 @@ const showItems = () => {
     });
   }
 };
-
 loadMoreBtn.addEventListener('click', showItems);
 showItems();
