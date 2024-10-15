@@ -176,27 +176,3 @@
     margin: 92px auto 0;
   }
 }
-.img-project {
-  width: 100%;
-  height: auto;
-}
-
-@media only screen and (max-width: 767px) {
-  .img-project {
-    width: 320px;
-    height: 184px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .img-project {
-    width: 704px;
-    height: 404px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .img-project {
-    width: 1008px;
-    height: 580px;
-  }
-}
