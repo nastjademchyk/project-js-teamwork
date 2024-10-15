@@ -252,17 +252,10 @@
       background-position: 864px 65%;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-      .about-for-background {
-          background-image: url(../img/bg-img-x2/bg2-desc-x2.png);
-      }
-  }
-
    @media (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi) {
-    .about-for-background{
-    background-image: url(../img/bg-img-x2/bg2-desc-x2.png);
+       .about-for-background {
+           background-image: url(../img/bg-img-x1/bg6-tablet-x1.png)
        }
    }
 
