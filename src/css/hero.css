@@ -127,14 +127,14 @@ h1 {
 .desk-arrow-text {
   margin-bottom: 72px;
 }
-.light-theme .hero-content {
+.hero-content {
   background-image: url(../img/bg-hero-img-lx1/bg-hero-mob-light-x1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .light-theme .hero-content {
+  .hero-content {
     background-image: url(../img/bg-hero-img-x2/bg-hero-mob-light-x2.png);
   }
 }
@@ -178,12 +178,12 @@ h1 {
     padding-bottom: 40px;
   }
 
-  .light-theme .hero-content {
+  .hero-content {
     background-image: url(../img/bg-hero-img-lx1/bg-hero-tablet-light-x1.png);
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .light-theme .hero-content {
+    .hero-content {
       background-image: url(../img/bg-hero-img-x2/bg-hero-tablet-light-x2.png);
     }
   }
@@ -233,11 +233,11 @@ h1 {
       font-size: 124px;
     }
 
-    .light-theme .hero-content {
+    .hero-content {
       background-image: url(../img/bg-hero-img-lx1/bg-hero-desc-light-x1.png);
     }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      .light-theme .hero-content {
+      .hero-content {
         background-image: url(../img/bg-hero-img-x2/bg-hero-desc-light-x2.png);
       }
     }
