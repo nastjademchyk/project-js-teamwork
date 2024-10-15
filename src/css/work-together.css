@@ -89,7 +89,7 @@
 }
 
 .left-text {
-  font-family: var(---font-poppins);
+  font-family: var(--font-poppins);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
