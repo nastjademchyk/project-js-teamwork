@@ -6,7 +6,7 @@
   text-transform: uppercase;
   color: #292929;
   text-align: left;
-  padding-bottom: 40px;
+ margin-bottom: 40px;
   font-family: 'Impact', sans-serif;
 }
 
@@ -80,12 +80,14 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   max-width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
   position: relative;
 }
+
+
 
 .about-item-education::before {
   display: block;
@@ -97,10 +99,10 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .about-title {
     font-size: 108px;
     line-height: 1.15;
@@ -134,11 +136,11 @@
     width: 336px;
     height: 680px;
     margin-bottom: 12px;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
   }
 
-  .about-text::before {
+  /* .about-text::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -149,7 +151,36 @@
     background-size: auto;
     background-repeat: no-repeat;
     z-index: -1;
+  } */
+
+ /* .about-text::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 336px;
+    height: 252px;
+    background-image: url('../img//bg-img-x1/bg6-tablet-x1.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+  } */
+
+  .about-for-background {
+      background-image: url(../img/bg-img-x1/bg6-tablet-x1.png);
+      background-repeat: no-repeat;
+      background-size: 336px 230px;
+      background-position: 400px 72%;
   }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+      .about-for-background {
+          background-image: url(../img/bg-img-x2/bg6-tablet-x2.png);
+      }
+  }
+
+  
 
   .about-section {
     justify-content: center;
@@ -158,7 +189,7 @@
   }
 
   .about-item-education {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
   }
@@ -169,7 +200,7 @@
   }
 
   .education-block .about-list-education {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -201,7 +232,7 @@
     text-align: left;
   }
 
-  .about-text::before {
+  /* .about-text::before {
     content: '';
     position: absolute;
     top: 104%;
@@ -212,7 +243,21 @@
     background-size: auto;
     background-repeat: no-repeat;
     z-index: -1;
+  } */
+
+  .about-for-background {
+      background-image: url(../img/bg-img-x1/bg2-desc-x1.png);
+      background-repeat: no-repeat;
+      background-size: 384px 300px;
+      background-position: 864px 65%;
   }
+
+   @media (-webkit-min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi) {
+       .about-for-background {
+           background-image: url(../img/bg-img-x1/bg6-tablet-x1.png)
+       }
+   }
 
   .about-title-two {
     font-weight: 500;
