@@ -12,7 +12,6 @@ const showItems = (scroll = false) => {
     }
   }
 
-  // Прокручувати сторінку тільки при натисканні на кнопку
   if (scroll) {
     const itemHeight = projects[0].getBoundingClientRect().height;
     window.scrollBy({

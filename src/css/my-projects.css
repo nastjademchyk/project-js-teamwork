@@ -19,12 +19,11 @@
   gap: 40px;
 }
 .project-item {
-  max-width: 100%;
+  width: 320px;
 }
 .img-project {
   border-radius: 16px;
-  width: 320px;
-  height: 184px;
+  width: 100%;
 }
 .content-container {
   margin-top: 12px;
@@ -121,8 +120,7 @@
   }
   .img-project {
     border-radius: 24px;
-    width: 704px;
-    height: 404px;
+    width: 100%;
   }
   .content-container {
     display: flex;
@@ -161,8 +159,7 @@
   }
   .img-project {
     border-radius: 24px;
-    width: 1008px;
-    height: 580px;
+    width: 100%;
   }
   .project-name {
     font-weight: 500;
