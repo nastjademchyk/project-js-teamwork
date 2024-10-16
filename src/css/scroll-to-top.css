@@ -5,8 +5,8 @@
   z-index: 1000;
 
   padding: 10px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 
   background-color: #bcdfd1;
   border: none;
@@ -20,9 +20,9 @@
 }
 
 .scroll-to-top-icon {
-  fill: #00b068;
-  stroke: transparent;
-  rotate: -90deg;
+  /* fill: #00b068; */
+  fill: transparent;
+  stroke: #292929;
 }
 
 .scroll-to-top:hover,
@@ -32,16 +32,21 @@
   opacity: 1;
 }
 
+.scroll-to-top:hover .scroll-to-top-icon,
+.scroll-to-top:focus .scroll-to-top-icon {
+  stroke: #00b068;
+}
+
 @media only screen and (min-width: 768px) {
   .scroll-to-top {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .scroll-to-top {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 }

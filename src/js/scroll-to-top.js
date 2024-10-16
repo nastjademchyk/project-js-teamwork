@@ -1,5 +1,7 @@
 let button = document.querySelector('.scroll-to-top');
 
+button.style.display = 'none';
+
 window.addEventListener('scroll', function () {
   let scrollHeight =
     document.documentElement.scrollTop || document.body.scrollTop;
