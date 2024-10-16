@@ -60,7 +60,7 @@
   src: url('../fonts/impact.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -68,7 +68,7 @@
   src: url(../fonts/Montserrat-Bold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -76,7 +76,7 @@
   src: url(../fonts/Poppins-Light.ttf) format('truetype');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -84,7 +84,7 @@
   src: url(../fonts/Poppins-SemiBold.ttf) format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -92,7 +92,7 @@
   src: url(../fonts/Poppins-Medium.ttf) format('truetype');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -100,7 +100,7 @@
   src: url(../fonts/Poppins-Regular.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -108,7 +108,7 @@
   src: url(../fonts/Montserrat-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 @font-face {
@@ -116,7 +116,7 @@
   src: url(../fonts/Montserrat-SemiBold.ttf) format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  /* font-display: swap; */
 }
 body {
   font-family: var(--font-poppins);
@@ -201,7 +201,8 @@ section {
 .dark-theme .review-item,
 .dark-theme .review-text,
 .dark-theme .form-input,
-.dark-theme .modal-wrapper {
+.dark-theme .modal-wrapper,
+.dark-theme .hero-link {
   background: #2a2d32;
 }
 .dark-theme .order-square {
