@@ -1,0 +1,47 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+
+  background-color: #bcdfd1;
+  border: none;
+  border-radius: 50%;
+  display: block;
+  opacity: 0.65;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-to-top-icon {
+  fill: #00b068;
+  stroke: transparent;
+  rotate: -90deg;
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  outline: none;
+  bottom: 23px;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .scroll-to-top {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .scroll-to-top {
+    width: 70px;
+    height: 70px;
+  }
+}
