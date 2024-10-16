@@ -8,7 +8,7 @@
   width: 50px;
   height: 50px;
 
-  background-color: #bcdfd1;
+  background-color: var(--color-light-accent);
   border: none;
   border-radius: 50%;
   display: block;
@@ -20,9 +20,8 @@
 }
 
 .scroll-to-top-icon {
-  /* fill: #00b068; */
   fill: transparent;
-  stroke: #292929;
+  stroke: var(--color-black);
 }
 
 .scroll-to-top:hover,
@@ -34,7 +33,7 @@
 
 .scroll-to-top:hover .scroll-to-top-icon,
 .scroll-to-top:focus .scroll-to-top-icon {
-  stroke: #00b068;
+  stroke: var(--color-accent-green);
 }
 
 @media only screen and (min-width: 768px) {
