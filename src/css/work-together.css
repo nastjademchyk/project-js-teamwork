@@ -13,6 +13,7 @@
   only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .container-work-together {
     background-image: url('../img/bg-img-x2/bg7-tablet-x2.png');
+    background-size: 336px 260px;
   }
 }
 

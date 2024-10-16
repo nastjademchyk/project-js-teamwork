@@ -125,9 +125,6 @@ h1 {
   display: none;
 }
 
-/* .desk-arrow-text {
-  margin-bottom: 72px;
-} */
 .hero-content {
   background-image: url(../img/bg-hero-img-lx1/bg-hero-mob-light-x1.png);
   background-repeat: no-repeat;
@@ -190,10 +187,6 @@ h1 {
     }
   }
 
-  /* .desk-arrow-text {
-    margin-bottom: 104px;
-  } */
-
   /*-----------------Desktop----------------*/
 
   @media only screen and (min-width: 1280px) {
@@ -208,7 +201,6 @@ h1 {
       display: flex;
       width: 100%;
       align-items: center;
-      /* margin-bottom: 96px; */
       justify-content: space-between;
     }
 

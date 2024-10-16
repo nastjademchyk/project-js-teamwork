@@ -167,6 +167,12 @@
     background-size: auto;
   }
 
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .benefits-container {
+      background-image: url(../img/bg-img-x2/bg3-desc-x2.png);
+      background-size: 526px 408px;
+    }
+  }
   .benefits-item {
     max-width: 384px;
     max-height: 184px;
