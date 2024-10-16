@@ -43,6 +43,7 @@ const onSubmit = async e => {
       position: 'center',
       messageColor: '#E74A3B',
       closeOnEscape: true,
+      class: 'custom-error',
     });
     return;
   }
@@ -67,6 +68,7 @@ const onSubmit = async e => {
       position: 'center',
       messageColor: '#E74A3B',
       closeOnEscape: true,
+      class: 'custom-error',
     });
   }
 };

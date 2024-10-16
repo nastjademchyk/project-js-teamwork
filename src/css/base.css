@@ -162,6 +162,10 @@ section {
     padding-bottom: 164px;
   }
 }
+
+.dark-theme .iziToast.custom-error p {
+  background: transparent;
+}
 .dark-theme,
 .dark-theme h1,
 .dark-theme p,
@@ -182,6 +186,7 @@ section {
   background-color: #292929;
   color: #f0f0f0;
 }
+
 .dark-theme .ac-trigger .is-active {
   background: #204136;
 }

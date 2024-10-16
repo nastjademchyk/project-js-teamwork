@@ -28,6 +28,7 @@ const showItems = (scroll = false) => {
     iziToast.info({
       message: 'Sorry, this is the last project',
       position: 'topRight',
+      class: 'custom-error',
     });
   }
 };
