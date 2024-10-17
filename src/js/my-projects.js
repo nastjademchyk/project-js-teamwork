@@ -27,7 +27,7 @@ const showItems = (scroll = false) => {
     loadMoreBtn.classList.add('is-hidden');
     iziToast.info({
       message: 'Sorry, this is the last project',
-      position: 'topRight',
+      position: 'center',
       class: 'custom-error',
     });
   }
