@@ -148,14 +148,14 @@ header {
 }
 @media screen and (min-width: 768px) {
   header {
-    padding: 32px;
+    padding: 32px 0;
   }
   .page-header-container {
     align-items: baseline;
     margin-right: auto;
   }
   .header .container {
-    padding: 0;
+    padding: 0 32px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -201,4 +201,16 @@ header {
   .nav-header-button {
     font-size: 18px;
   }
+}
+#about {
+  padding-top: 100px; /* Адаптуйте значення */
+  margin-top: -100px; /* Негативний маргін для точності прокрутки */
+}
+#my-projects {
+  padding-top: 100px; /* Адаптуйте значення */
+  margin-top: -100px; /* Негативний маргін для точності прокрутки */
+}
+#work-together {
+  padding-top: 100px; /* Адаптести значення */
+  margin-top: -100px; /* Негативний маргін для точності прокрутки */
 }
