@@ -1,14 +1,3 @@
-header {
-  position: fixed; /* Фіксуємо хедер */
-  top: 0; /* Розміщуємо його зверху */
-  left: 0; /* Рівняємо по лівому краю */
-  width: 100%; /* Задаємо повну ширину */
-  z-index: 9999999999999; /* Задній план, щоб не перекривався іншими елементами */
-  background-color: #f0f0f0; /* Фон хедера */
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Тінь для виділення */
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .header .container {
   margin-left: auto;
   margin-right: auto;
@@ -137,6 +126,7 @@ header {
   }
   .page-header-container {
     align-items: baseline;
+    margin-right: auto;
   }
   .header .container {
     padding: 0;
@@ -144,9 +134,6 @@ header {
     margin-right: auto;
   }
 
-  .header-logo {
-    margin-right: 84px;
-  }
   .page-nav {
     width: 100%;
     margin-right: 20px;
@@ -170,13 +157,20 @@ header {
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  header {
+    padding: 32px 0;
+    margin-right: 678px;
+  }
+  .header .container {
     max-width: 1280px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .header-logo {
     font-size: 32px; /* Збільшуємо розмір логотипу */
-    margin-right: 646px;
   }
 
   .nav-header-button {
