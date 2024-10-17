@@ -1,7 +1,33 @@
+body {
+  padding-right: 17px; /* Ширина скролу */
+  overflow-y: scroll;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header {
+  position: fixed; /* Фіксуємо хедер */
+  top: 0; /* Розміщуємо його зверху */
+  left: 0; /* Рівняємо по лівому краю */
+  width: 100%; /* Задаємо повну ширину */
+  z-index: 9999999999999; /* Задній план, щоб не перекривався іншими елементами */
+  background-color: #f0f0f0; /* Фон хедера */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Тінь для виділення */
+  padding: 20px;
+  overflow: hidden;
+  transition: background-color 0.1s, box-shadow 0.1s;
+}
+.header-placeholder {
+  height: 96px;
+}
+
 .header .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 0;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -40,7 +66,7 @@
 
 .page-header-container {
   display: flex;
-
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -121,16 +147,19 @@
   }
 }
 @media screen and (min-width: 768px) {
+  header {
+    padding: 32px;
+  }
   .page-header-container {
     align-items: baseline;
+    margin-right: auto;
   }
   .header .container {
-    padding: 32px 32px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .header-logo {
-    margin-left: 0;
-  }
   .page-nav {
     width: 100%;
     margin-right: 20px;
@@ -154,8 +183,15 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  header {
+    padding: 32px 0;
+  }
+  .header .container {
     max-width: 1280px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .header-logo {

@@ -1,6 +1,8 @@
 .footer {
   border-top: #e4e5e6 1px solid;
   background-color: #f0f0f0;
+  padding-top: 40px;
+  padding-bottom: 24px;
 }
 
 .footer .container {
@@ -8,7 +10,10 @@
   min-width: 320px;
   width: 100%;
   overflow-x: hidden;
-  padding: 40px 20px 24px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
   box-sizing: border-box;
 }
 
@@ -19,6 +24,7 @@
   flex-direction: column; /* Елементи в стовпчик на мобільних пристроях */
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 }
 
 /* Стиль логотипу в футері */
@@ -60,7 +66,6 @@
   color: #00b068;
 }
 
-/* Підпис */
 .footer-copyright {
   display: flex;
   margin-left: auto;
@@ -69,7 +74,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  margin-top: 40px;
+  margin-top: 0;
   color: #292929;
   text-align: center; /* Вирівнюємо копірайт по центру */
   letter-spacing: 0.03em;
@@ -84,7 +89,8 @@
     text-align: left;
   }
   .footer .container {
-    padding: 40px 32px 24px 32px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
   .footer-social {
     flex-direction: row;
@@ -100,9 +106,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .footer .container {
-    padding: 40px 32px 24px 32px;
-  }
   .footer-content {
     flex-direction: row;
   }
@@ -110,6 +113,7 @@
   .footer-logo {
     font-size: 32px;
     margin-bottom: 0;
+    margin-right: 571px;
   }
 
   .footer-social {
