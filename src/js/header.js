@@ -20,3 +20,8 @@ function closeModal() {
 
 // Слухач подій для кнопки відкриття
 openModalBtn.addEventListener('click', openModal);
+
+const header = document.querySelector('header');
+const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+header.style.paddingRight = `${scrollBarWidth}px`;
