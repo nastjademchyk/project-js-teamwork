@@ -1,7 +1,3 @@
-body {
-  padding-right: 17px; /* Ширина скролу */
-  overflow-y: scroll;
-}
 html,
 body {
   overflow-x: hidden;

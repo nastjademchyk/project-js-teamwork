@@ -1,6 +1,6 @@
 .hero {
   min-height: 968px;
-  padding-top: 96px;
+  padding-top: 64px;
 }
 
 .hero-container {
@@ -139,7 +139,11 @@ h1 {
 }
 
 /*-----------------Tablet----------------*/
+
 @media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 96px;
+  }
   .h1-img {
     padding-top: 88px;
     margin-bottom: 60px;
