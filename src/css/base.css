@@ -205,6 +205,9 @@ section {
 .dark-theme .hero-link {
   background: #2a2d32;
 }
+.dark-theme .header {
+  background-color: #1e2023;
+}
 .dark-theme .order-square {
   background: #14c57c;
 }
