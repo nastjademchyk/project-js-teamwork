@@ -23,3 +23,30 @@ openModalBtn.addEventListener('click', openModal);
 
 const header = document.querySelector('header');
 const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+const toggleSwitch = document.getElementById('toggle');
+
+function changeTheme() {
+  if (toggleSwitch.checked) {
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('dark-theme');
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+function loadTheme() {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'dark') {
+    toggleSwitch.checked = true;
+    document.body.classList.add('dark-theme');
+  } else {
+    toggleSwitch.checked = false;
+    document.body.classList.remove('dark-theme');
+  }
+}
+
+loadTheme();
+
+toggleSwitch.addEventListener('change', changeTheme);
