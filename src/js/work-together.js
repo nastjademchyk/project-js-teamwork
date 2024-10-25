@@ -65,7 +65,7 @@ const onSubmit = async e => {
     document.addEventListener('keydown', onEscKeyPress);
   } catch (error) {
     iziToast.error({
-      message: 'The server is not responding, try again later',
+      message: 'Please provide valid email',
       position: 'center',
       messageColor: '#E74A3B',
       closeOnEscape: true,
