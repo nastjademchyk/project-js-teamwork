@@ -4,6 +4,11 @@ body {
   width: 100vw;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
 header {
   position: fixed;
   top: 0;
@@ -19,7 +24,20 @@ header {
   height: 96px;
 }
 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   background: #f0f0f0;
+  z-index: 9999;
+}
+
+.modal.is-visible {
+  opacity: 1;
 }
 
 .header-logo {

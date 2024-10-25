@@ -6,6 +6,8 @@ const modalNavItem = document.querySelector('.modal-nav-item');
 // Функція для відкриття модального вікна
 function openModal() {
   modal.classList.remove('is-hidden');
+  modal.classList.add('is-visible'); // Додайте клас для анімації
+  document.body.classList.add('no-scroll');
   // Слухач подій для кнопки закриття
   closeModalBtn.addEventListener('click', closeModal);
   modalNavItem.addEventListener('click', closeModal);
@@ -13,11 +15,14 @@ function openModal() {
 
 // Функція для закриття модального вікна
 function closeModal() {
-  modal.classList.add('is-hidden');
+  modal.classList.remove('is-visible'); // Видалити клас для анімації
+  setTimeout(() => {
+    modal.classList.add('is-hidden'); // Додайте клас 'is-hidden' тільки після анімації
+  }, 800); // Затримка рівна часу анімації
+  document.body.classList.remove('no-scroll');
   closeModalBtn.removeEventListener('click', closeModal);
   modalNavItem.removeEventListener('click', closeModal);
 }
-
 // Слухач подій для кнопки відкриття
 openModalBtn.addEventListener('click', openModal);
 

@@ -6,8 +6,14 @@
   height: 100%;
   z-index: 999;
   background: rgba(41, 41, 41, 0.8);
+  overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
 .modal-form {
   position: absolute;
   top: 50%;

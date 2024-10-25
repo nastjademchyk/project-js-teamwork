@@ -53,7 +53,8 @@ const onSubmit = async e => {
     const { title, message } = await createContact(objData);
     e.target.reset(); // очищаємо форму
     const modalHTML = createModal({ title, message }); // Створюємо модальне вікно
-    refs.modalContainer.insertAdjacentHTML('beforeend', modalHTML); // Показ модального вікна
+    refs.modalContainer.insertAdjacentHTML('beforeend', modalHTML);
+    document.body.classList.add('no-scroll');
     // Додаємо прослуховувачі подій для закриття модального вікна
     const closeModalButton = document.querySelector('.modal-close-btn');
     closeModalButton.addEventListener('click', closeModalWindow);
@@ -76,6 +77,7 @@ const onSubmit = async e => {
 function closeModalWindow() {
   const modalWindow = document.querySelector('.backdrop');
   modalWindow?.remove(); // видаляємо модальне вікно з DOM
+  document.body.classList.remove('no-scroll');
   document.removeEventListener('keydown', onEscKeyPress); // Видаляємо слухача на клавіатуру
 }
 // Функція для закриття вікна при натисканні клавіші Escape
